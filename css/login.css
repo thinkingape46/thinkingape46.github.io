@@ -1,0 +1,125 @@
+html {
+	max-width: 1100px;
+	background-color: #9dd6d1;
+	padding: 10px 20px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 87%;
+}
+.container {
+	background-color: #ffffff;
+	padding: 10px 20px;
+}
+h1 {
+	color: #004a43;
+	margin-bottom: 0px;
+}
+.slogan {
+	color: #004a43;
+	margin-top: 0px;
+}
+/* Site Navigation */
+.site-nav li {
+	list-style: none;
+	float: left;
+	margin-top: 15px;
+	margin-right: 10px;
+	}
+.site-nav a {
+	display: block;
+	text-decoration: none;
+	color: #004a43;
+	border: 2px solid #9dd6d1;
+	border-bottom: none;
+	padding: 10px 20px;
+	background-color: #9dd6d1;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.7);
+	}
+.site-nav a:hover {
+	background-color: #e8fffd;
+	font-size: 125%;
+	font-weight: bold;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	}
+/* End Site Navigation */
+/* Form Styling */
+input[type="email"], 
+input[type="password"],
+select {
+	width: 100%;
+	display: block;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 100%;
+	margin-bottom: 10px;
+	border: 1px solid #004a43;
+	box-sizing: border-box;
+	outline: none;
+	
+}
+.hidden-label {
+	position: absolute;
+	height: 0;
+	width: 0;
+	overflow: hidden;
+	visibility: hidden;
+}
+form {
+	background-color: #9dd6d1;
+	width: 50%;
+	padding: 20px;
+	margin-top: 20px;
+	box-sizing: border-box;
+}
+/!-- Don't wish to apply now to test other features --/
+input[type="email"]:focus, 
+input[type="password"]:focus {
+	border: 3px solid #004a43;
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+/!-- End - Don't wish to apply now to test other features --/
+}
+input[type="submit"] {
+	width: 100%;
+	display: box;
+	margin-bottom: 10px;
+	padding: 10px 20px;
+	border: 1px solid #35c4b9;
+	background-color: #0ca195;
+	font-size: 100%;
+	color: #fff;
+	border-radius: 2px;
+}
+input[type="submit"]:hover, 
+input[type="submit"]:focus {
+	background-color: #35c4b9;
+	font-style: italic;
+	font-size: 105%;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+} 
+input {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.check-boxtext {
+	color: #858686;
+	font-size: 85%;
+	} 
+/* Form Styling Ends */
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+.group {
+  zoom: 1;
+}
+body p {
+	margin-bottom: 0;
+}
