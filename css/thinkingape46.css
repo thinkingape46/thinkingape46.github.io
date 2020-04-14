@@ -182,8 +182,8 @@ width: 70%;
 padding: 10px 30px;
 box-sizing: border-box;
 font-size: 95%;
-background-image: linear-gradient(to right, #00c4ba, #ffffff);
-background-image: -ms-linear-gradient(left, #00c4ba, #ffffff);
+background-image: linear-gradient(to right, #00c4ba, #632ef5);
+background-image: -ms-linear-gradient(left, #00c4ba, #632ef5);
 }
 .para2 {
 float: right;
