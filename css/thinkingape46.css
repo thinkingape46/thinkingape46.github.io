@@ -74,13 +74,11 @@ h1 {
 .site-nav a {
 	display: block;
 	text-decoration: none;
-	color: #4dffee;
+	color: #ffffff;
 	border: 2px solid #4dffee;
 	padding: 10px 20px;
 	background-color: #4dffee;
 	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.7);
-	background-image: url(../images/nav_bar.jpg);
-	border-radius: 5px;
 	}
 .site-nav a:hover {
 	background-color: #e8fffd;
