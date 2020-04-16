@@ -1,31 +1,27 @@
-html {
-	max-width: 1100px;
-	background-color: #008080;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+html {    
+	background-color: #669494;
+	font-family: Arial, sans-serif;
     font-size: 87%;
-    margin: 0;
-    padding: 0;
-}
-.container {
-    background-color: #ffffff;
-    color: #ffffff;
-    max-width: 940px;
-    margin: 0;
 }
 body {
+
     margin: 0;
 }
-.heading {
+header {
     background-color: #008080;
+    color: #ffffff;
 }
 h1 {
-	margin-bottom: 0px;
-}
+	margin: 0;
+	}
 .slogan {
-    margin-top: 0px;
-    margin-bottom: 0px;
+        margin-top: 0px;
+    }
+.container {    
+    max-width: 940px;
+    margin: 0 auto;
 }
-/* Site Navigation */
+/* Navigation */
 .site-nav li {
 	list-style: none;
 	float: left;
@@ -50,71 +46,16 @@ ul {
 	margin: 0;
 	padding: 0;
 	}
-@media screen and (max-width: 700px) {
-	.site-nav li {
-		width: 33.332%;
-		margin-right: 0;
-		margin-bottom: 0;
-		text-align: center;
-				}
-		.site-nav a {
-			padding: 25px 0;
-			font-size: 150%;
-			margin-right: 5px;
-			}
-		.site-nav a:hover {
-				background-color: #e8fffd;
-				font-size: 150%;
-			}	
+/* End of Navigation */
+.content-area {
+    background-color: #ffffff;
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
 }
-@media screen and (max-width: 480px) {
-	.site-nav li {
-		width: 50%;
-		margin-right: 0;
-			}
-		.site-nav a:hover {
-			background-color: #e8fffd;
-			font-size: 150%;
-					}
-		.site-nav {padding-left: 5px;}
-				}
-/* End Site Navigation */
-/* Table formatting */
-table {
-    border-spacing: 0;
-    border-collapse: collapse;
-    width: 50%;
+footer {
+    text-align: center;
 }
-table th {
-    background-color: #37a59a;
-    border: 1px solid #37a59a;
-    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.7);
-    text-align: left;
-}
-table th, 
-table td {
-    border: 1px solid #37a59a;
-    padding: 3px;
-}
-table tbody tr:nth-child(even) {
-    background-color: #74fcee;
-}
-.col1 {
-    width: 40%;
-}
-.col3
-.col4 {
-    width: 20%;
-}
-.col2 {
-    width: 20%;
-}
-/* Table formatting ends */
-.para1 {
-    float: none;
-    background-image: linear-gradient(to right, #3eb9b3, #6141b9);
-    background-image: -ms-linear-gradient(left, #3eb9b3, #6141b9);
-}
+/* Float fix */
 .group:before,
 .group:after {
   content: "";
@@ -128,3 +69,4 @@ table tbody tr:nth-child(even) {
 .group {
   zoom: 1;
 }
+/* End of float fix */
