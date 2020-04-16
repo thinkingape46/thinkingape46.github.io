@@ -56,7 +56,7 @@ html {
 .content-area p {
 	color: #ffffff;
 }
-}
+
 h1 {
 	margin: 0;
 	}
@@ -70,19 +70,19 @@ h1 {
 	float: left;
 	margin-top: 15px;
 	margin-right: 10px;
+	margin-bottom: 10px;
 	}
 .site-nav a {
 	display: block;
 	text-decoration: none;
-	color: #ffffff;
-	border: 2px solid #4dffee;
+	color: #008080;
+	border: 2px solid #ffffff;
 	padding: 10px 20px;
-	background-color: #4dffee;
+	background-color: #ffffff;
 	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.7);
 	}
 .site-nav a:hover {
-	background-color: #e8fffd;
-	font-size: 125%;
+	background-color: #ffffff;
 	font-weight: bold;
 }
 ul {
@@ -171,36 +171,38 @@ img {
 /* Banner overlay ends */
 .content-area {
 	background-color: #ffffff;
-	border-top: 2px solid #4dffee;
-	border-bottom: 2px solid #4dffee;
 	}
 .para1 {
 float: left;
-width: 70%;
+width: 67%;
 padding: 10px 30px;
+margin-top: 20px;
+margin-right: 20px;
+margin-bottom: 20px;
 box-sizing: border-box;
 font-size: 95%;
-background-image: linear-gradient(to right, #00c4ba, #632ef5);
-background-image: -ms-linear-gradient(left, #00c4ba, #632ef5);
+background-image: linear-gradient(to right, #3eb9b3, #6141b9);
+background-image: -ms-linear-gradient(left, #3eb9b3, #6141b9);
 }
 .para2 {
 float: right;
 width: 30%;
 background: #4dffee url(../images/para2_bg.jpg) center center no-repeat;
 padding: 10px 30px;
+margin-top: 20px;
 box-sizing: border-box;
 font-size: 85%;
 color: #ffffff;
 font-weight: bold;
 }
 .non-mobile {
-	padding: 10px 30px;
+	padding: 5px;
 	max-width: 940px;
-	background-color: bisque;
-	border: 1px solid #949494;
+	background-color: #ffffff;
 	margin: 0 auto;
 	margin-top: 10px;
 	margin-bottom: 10px;
+	vertical-align: middle;
 	box-sizing: border-box;
 	}
 @media screen and (max-width: 700px) {
@@ -243,9 +245,6 @@ font-weight: bold;
 
 .group {
   zoom: 1;
-}
-body p {
-	margin-bottom: 0;
 }
 body {
 	margin: 0;

@@ -1,17 +1,25 @@
 html {
 	max-width: 1100px;
-	background-color: #37a59a;
-	padding: 10px 20px;
+	background-color: #008080;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	font-size: 87%;
+    font-size: 87%;
+    margin: 0;
+    padding: 0;
 }
 .container {
-	background-color: #ffffff;
-    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #ffffff;
+    max-width: 940px;
+    margin: 0;
+}
+body {
+    margin: 0;
+}
+.heading {
+    background-color: #008080;
 }
 h1 {
-	color: #37a59a;
-    margin-bottom: 0px;
+	margin-bottom: 0px;
 }
 .slogan {
     margin-top: 0px;
@@ -23,26 +31,53 @@ h1 {
 	float: left;
 	margin-top: 15px;
 	margin-right: 10px;
+	margin-bottom: 10px;
 	}
 .site-nav a {
 	display: block;
 	text-decoration: none;
-	color: #000000;
-	border: 2px solid #37a59a;
-	border-bottom: none;
+	color: #008080;
+	border: 2px solid #ffffff;
 	padding: 10px 20px;
-    background-color: #37a59a;
-    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.7);
+	background-color: #ffffff;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.7);
 	}
 .site-nav a:hover {
-	background-color: #59f0bd;
-	font-size: 125%;
+	background-color: #ffffff;
 	font-weight: bold;
 }
 ul {
 	margin: 0;
 	padding: 0;
 	}
+@media screen and (max-width: 700px) {
+	.site-nav li {
+		width: 33.332%;
+		margin-right: 0;
+		margin-bottom: 0;
+		text-align: center;
+				}
+		.site-nav a {
+			padding: 25px 0;
+			font-size: 150%;
+			margin-right: 5px;
+			}
+		.site-nav a:hover {
+				background-color: #e8fffd;
+				font-size: 150%;
+			}	
+}
+@media screen and (max-width: 480px) {
+	.site-nav li {
+		width: 50%;
+		margin-right: 0;
+			}
+		.site-nav a:hover {
+			background-color: #e8fffd;
+			font-size: 150%;
+					}
+		.site-nav {padding-left: 5px;}
+				}
 /* End Site Navigation */
 /* Table formatting */
 table {
@@ -76,8 +111,9 @@ table tbody tr:nth-child(even) {
 }
 /* Table formatting ends */
 .para1 {
-    border-top: 2px solid #37a59a;
     float: none;
+    background-image: linear-gradient(to right, #3eb9b3, #6141b9);
+    background-image: -ms-linear-gradient(left, #3eb9b3, #6141b9);
 }
 .group:before,
 .group:after {
