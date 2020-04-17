@@ -166,8 +166,8 @@ img {
 	width: 100%;
 	box-sizing: border-box;
 	}
-.content-area img:hover {
-	   transform: scale(1.5);
+.image1:hover, .image2:hover {
+	   transform: scale(1);
 	   transition: all 2s;
    }
 /* Banner overlay ends */
@@ -252,3 +252,10 @@ body {
 	margin: 0;
 	padding: 0;
 }
+.image1 {
+	float: left;
+	width: 49%;
+}
+.image2 {
+	float: right;
+	width: 49%;
