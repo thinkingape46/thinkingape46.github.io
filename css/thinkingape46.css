@@ -150,6 +150,7 @@ img {
 	height: auto;
 	}
 .image-banner {
+	overflow: hidden;
 	position: relative;
 	}
 .image-banner img{
@@ -165,9 +166,10 @@ img {
 	width: 100%;
 	box-sizing: border-box;
 	}
- .content-area img:hover {
-	border-radius: 10px;
-}
+.content-area img:hover {
+	   transform: scale(1.5);
+	   transition: all 2s;
+   }
 /* Banner overlay ends */
 .content-area {
 	background-color: #ffffff;
