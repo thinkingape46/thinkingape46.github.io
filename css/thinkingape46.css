@@ -50,13 +50,6 @@ html {
 		margin: 0 auto;
 		color: #ffffff;
 }
-.container p {
-	color: #ffffff;
-}
-.content-area p {
-	color: #ffffff;
-}
-
 h1 {
 	margin: 0;
 	}
@@ -189,12 +182,12 @@ background-image: -ms-linear-gradient(left, #3eb9b3, #6141b9);
 .para2 {
 float: right;
 width: 30%;
-background: #4dffee url(../images/para2_bg.jpg) center center no-repeat;
+background-image: linear-gradient(to left, #9ea1a1, #ffffff);
 padding: 10px 30px;
 margin-top: 20px;
 box-sizing: border-box;
 font-size: 85%;
-color: #ffffff;
+color: #000000;
 font-weight: bold;
 }
 .non-mobile {
