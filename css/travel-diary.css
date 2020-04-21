@@ -137,8 +137,7 @@ ul {
 .sprites_settings a:hover {background-position: -50px -100px;}
 /* End Sprites */
 /* Banner overlay */
-img { 
-	margin-top: 10px;
+img {
 	width: 100%;
 	height: auto;
 	}
@@ -219,15 +218,43 @@ font-weight: bold;
 @media screen and (max-width: 480px) {
  .non-mobile {display: none;}
 }
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1100px) {
 	.container {
 		max-width: 1350px;
 		font-size: 150%;
-			}
+			}		
    }
 /* Strip images */
 
 /* Strip images */
+
+/* Thumbnail styles */
+.picture-grid {
+	margin-right: -10px;
+}
+.picture-grid a {
+	float: left;
+	width: 50%;
+	padding-right: 10px;
+	box-sizing: border-box;
+	margin-bottom: 10px;
+}
+.picture-grid img {
+	display: block;
+}
+.picture-grid:hover img {
+	opacity: .5;
+	transform: scale(0.9);
+	transition-duration: 1s;
+}
+.picture-grid img:hover {
+	transform: scale(1);
+	transform: rotate(2deg);
+	transition-duration: 0.5s ease-in-out;
+	box-shadow: 0 0 7px rgba(0, 0, 0, 0.7);
+	opacity: 1;
+}
+/* End of Thumbnail styles */
 .group:before,
 .group:after {
   content: "";
@@ -252,3 +279,4 @@ body {
 .image2 {
 	float: right;
 	width: 49%;
+}
