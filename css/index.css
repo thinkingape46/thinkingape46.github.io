@@ -62,15 +62,41 @@ header {
 	margin-right: auto;
 	border: 3px solid #dbdbdb;
 	border-radius: 10px;
-	width: 60%;
-	height: 400px;
-	background-color: #abfeff;
-
+	width: 70%;
+	height: 600px;
+	background-color: #2bff32;
 }
 
-.content h1 {
+.content h1, .content p{
 	margin-left: 20px;
 	margin-top: 40px;
+}
+
+.content p {
+	margin-top: 10px;
+}
+
+.thumbnails img {
+	height: 150px;
+	width: 150px;
+	margin-left: 20px;
+	display: block;
+}
+
+.spectrumV {
+	position: relative;
+}
+
+.spectrumVDescription {
+	position: absolute;
+	bottom: -13px;
+	font-size: 80%;
+	color: #ffffff;
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 150px;
+	text-align: center;
+	height: 25px;
+	line-height: 25px;
 }
 
 .group:before,
