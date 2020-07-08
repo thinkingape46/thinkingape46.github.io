@@ -1,0 +1,166 @@
+body {
+    background-color: #666666;
+    color:  #000000;
+    width: 1000px;
+    margin: 0 auto;    
+    padding-top: 50px;
+    position: relative;
+}
+
+h2 {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.box {
+    position: relative;
+    width: 75%;
+    background-color: #abc5b7;
+    color: #5e4746;
+    height: 400px;
+    margin: 20px 100px;
+    box-shadow: 0 0 10px #3a3939;
+    display: flex;
+    justify-content: space-evenly;    
+}
+
+.playerOne, .playerTwo {
+    flex-basis: 50%;
+    background-color: #6cfdb2ec;
+}
+.playerTwo {
+    background-color: #a5f5cb;
+}
+
+.score-box, .score-box-round {
+    height: 75px;
+    width: 75px;
+    margin: 50px auto;
+    text-align: center;
+    background-color: #FFFFFF;
+    border-radius: 3px;
+    position: relative;
+    color: #000;
+}
+.score-label {
+    position: absolute;
+    width: 100%;
+    margin-top: 0;
+    top: -25px;
+}
+.score-box-round {
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    font-size: 2em;
+}
+#score-num-one, #score-num-two {
+    line-height: 75px;
+    font-size: 3em;
+}
+
+
+#dice {
+    position: absolute;
+    top: 150px;
+}
+#dice {
+    height: 100px;
+    left: 325px;
+    animation-name: shake;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes shake {
+    33% {transform: rotate(-1deg);}
+    66% {transform: rotate(1deg);}
+    100% {transform: rotate(0deg);}
+}
+
+#player-one-roll, #player-two-roll, #player-one-hold, #player-two-hold, #button-start-stop {
+    position: absolute;
+    top: 275px;
+    padding: 12px 30px;
+    border-radius: 10px;
+    background-color: #0bd43d;
+    border: 0;
+    padding: 0;
+}
+#player-one-hold, #player-two-hold {
+    top: 330px;
+    padding: 12px 30px;
+    border-radius: 10px;
+    background-color: #af7406;
+    border: 0;
+    padding: 0;
+}
+
+#player-one-roll, #player-one-hold {
+    left: 138px;
+}
+#player-two-roll, #player-two-hold {
+    left: 513px;
+}
+
+.button-roll-hold a, #button-start-stop {
+    display: block;
+    text-decoration: none;
+    display: block;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0;
+    color: #000000;
+}
+#button-start-stop {
+    left: 325px;
+    top: 300px;
+    width: 100px;
+    height: 60px;
+    line-height: 60px;
+    text-decoration: none;
+}
+#button-start-stop {
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+#game-end {
+    position: absolute;
+    top: 40px;
+    padding: 10px 40px;
+    display: block;
+    text-align: center;
+    background-color: #db1f6a;
+    color: #ffffff;
+    opacity: 0;
+}
+#game-end p {            
+    margin: 2px auto 2px auto;
+    font-size: 12px;
+}
+#game-end p:first-child {
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+
+#player-one-label, #player-two-label {
+    position: absolute;
+    padding: 10px 20px;
+    background-color: #db1f6a;
+}
+#player-one-label, #player-two-label {
+    position: absolute;
+    padding: 5px 10px;
+    background-color: #db1f6a;
+    top: 290px;
+    border-radius: 3px;
+    }
+#player-one-label {
+    left: 228px;
+    }
+#player-two-label {
+    left: 601px;
+    }

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pig Game</title>
+    <link rel="stylesheet" href="pig_game.css">
+</head>
+<body>
+    <div class="box">
+
+        <div class="players playerOne">
+            <div class="score-box">
+                <p class="score-label">TOTAL</p>
+                <p id="score-num-one">0</p>
+            </div>
+            <div class="score-box-round">                
+                <p id="score-num-round-one">0</p>
+            </div>
+        </div>
+
+        <div class="players playerTwo">
+            <div class="score-box">
+                <p class="score-label">TOTAL</p>
+                <p id="score-num-two">0</p>
+            </div>
+            <div class="score-box-round">                
+                <p id="score-num-round-two">0</p>
+            </div>
+        </div>
+
+        <div id="dice-image">
+            <img id="dice" src="images/baby_pig.png" alt="dice">
+        </div>
+
+        <div>
+            <button type="button" class="button-roll-hold" id="player-one-roll"><a href="#">ROLL</a></button>
+
+            <button type="button" class="button-roll-hold" id="player-one-hold"><a href="#">HOLD</a></button>
+        </div>
+
+        <div>
+            <button type="button" class="button-roll-hold" id="player-two-roll"><a href="#">ROLL</a></button>
+            <button type="button" class="button-roll-hold" id="player-two-hold"><a href="#">HOLD</a></button>
+        </div>
+
+        <div>
+            <a class="button-start-stop" id="button-start-stop" href="#">START</a>
+        </div>
+
+        <div id="game-end">
+            <p>1</p>
+            <p>1</p>
+            <p>1</p>
+        </div>
+    </div>
+    <div>
+        <p id="player-one-label">PLAYER ONE</p>
+        <p id="player-two-label">PLAYER TWO</p>
+    </div>
+
+    <script src="pig_game.js"></script>
+</body>
+</html>
