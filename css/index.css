@@ -63,7 +63,7 @@ header {
 	border: 3px solid #dbdbdb;
 	border-radius: 10px;
 	width: 70%;
-	height: 600px;
+	height: 500px;
 	background-color: #4aff95;
 }
 
@@ -76,6 +76,10 @@ header {
 	margin-top: 10px;
 }
 
+.thumbnails {
+	display: flex;
+}
+
 .thumbnails img {
 	height: 150px;
 	width: 150px;
@@ -83,7 +87,7 @@ header {
 	display: block;
 }
 
-.spectrumV {
+.spectrumV, .pig-game {
 	position: relative;
 	height: 150px;
 	width: 150px;
@@ -118,10 +122,3 @@ body {
 	margin: 0;
 	padding: 0;
 }
-.image1 {
-	float: left;
-	width: 49%;
-}
-.image2 {
-	float: right;
-	width: 49%;}
