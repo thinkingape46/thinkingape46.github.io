@@ -1,5 +1,4 @@
-html {
-}
+
 body {
 	color: #fff;
 	background: linear-gradient(#525151, #afafaf);
@@ -58,13 +57,13 @@ h1 {
 /* Container style starts */
 .container {
 	margin: 0 auto 0 auto;
+	width: 75%;
 }
 .content {
 	margin: 15px auto 50px auto;
 	border-radius: 10px;
 	width: 70%;
 	height: 500px;
-	/* background-color: #8b1f3c; */
 }
 .content h1, .content p{
 	margin-left: 20px;
