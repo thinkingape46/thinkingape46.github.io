@@ -2,7 +2,6 @@
 body {
 	color: #fff;
 	background: linear-gradient(#525151, #afafaf);
-	background-repeat: no-repeat;
 	margin: 0 auto;
 	font-family: 'Roboto Mono', monospace;
 }
@@ -20,7 +19,7 @@ h1 {
 /* Navigation styling start */
 
 .siteNav {
-	max-width: 1200px;
+	max-width: 1000px;
 	height: 50px;
 	margin: 15px auto 0 auto;
 }
@@ -57,12 +56,14 @@ h1 {
 /* Container style starts */
 .container {
 	margin: 0 auto 0 auto;
-	width: 75%;
+	width: 1000px;
+	padding-bottom: 100px;
+	box-sizing: border-box;
 }
 .content {
 	margin: 15px auto 50px auto;
 	border-radius: 10px;
-	width: 70%;
+	width: 80%;
 	height: 500px;
 }
 .content h1, .content p{
