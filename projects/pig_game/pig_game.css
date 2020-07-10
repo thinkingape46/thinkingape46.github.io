@@ -1,21 +1,5 @@
-
 body {
-    color:  #ffffff;
-    margin: 0 auto;    
-    padding-top: 10px;
     position: relative;
-    padding-bottom: 10px;
-}
-
-header {
-	/* margin: 40px auto 0 auto; */
-	text-align: center;
-	border-bottom: 2px solid #787878;
-}
-
-h2 {
-    margin-top: 80px;
-    text-align: center;
 }
 
 .box {
@@ -25,13 +9,17 @@ h2 {
     color: #fff;
     height: 400px;
     margin: 20px auto;
-    box-shadow: 0 0 10px #3a3939;
+    box-shadow: 0 0 10px #ffffff;
     display: flex;
     justify-content: space-evenly;  
 }
 
 .playerOne, .playerTwo {
     flex-basis: 50%;
+}
+
+.score-box {
+    position: relative;
 }
 
 .score-box, .score-box-round {
@@ -44,12 +32,6 @@ h2 {
     position: relative;
     color: #000;
 }
-.score-label {
-    position: absolute;
-    width: 100%;
-    margin-top: 0;
-    top: -25px;
-}
 .score-box-round {
     height: 50px;
     width: 50px;
@@ -57,8 +39,9 @@ h2 {
     font-size: 2em;
 }
 #score-num-one, #score-num-two {
-    line-height: 75px;
+    /* line-height: 75px; */
     font-size: 3em;
+    margin-bottom: 0;
 }
 
 #dice {
@@ -67,7 +50,7 @@ h2 {
 }
 #dice {
     height: 100px;
-    left: 325px;
+    left: 43%;
     animation-name: shake;
     animation-duration: 500ms;
     animation-iteration-count: infinite;
@@ -115,7 +98,7 @@ h2 {
     color: #fff;
 }
 #button-start-stop {
-    left: 325px;
+    left: 43%;
     top: 300px;
     width: 100px;
     height: 60px;
@@ -155,6 +138,7 @@ h2 {
 #player-one-label, #player-two-label {
     position: absolute;
     padding: 5px 10px;
+    margin-left: 0px;
     background-color: #db1f6a;
     top: 30%;
     border-radius: 3px;
@@ -165,3 +149,10 @@ h2 {
 #player-two-label {
     left: 67.5%;
     }
+
+/* Reversing index.css styling */
+.content h1, .content p{
+	margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0;
+}
