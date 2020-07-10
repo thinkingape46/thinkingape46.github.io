@@ -1,18 +1,6 @@
-html {
-	background-color: #d6d6d6;
-	font-family: 'Roboto Mono', monospace;
-}
 
 body {
-	/* max-width: 1200px; */
-	margin-left: 0;
-	margin-right: 0;
-}
-
-body {
-    background-color: #666666;
     color:  #ffffff;
-    width: 1000px;
     margin: 0 auto;    
     padding-top: 10px;
     position: relative;
@@ -24,43 +12,6 @@ header {
 	text-align: center;
 	border-bottom: 2px solid #787878;
 }
-
-/* Navigation styling start */
-
-.siteNav {
-	/* max-width: 1200px; */
-	height: 50px;
-	margin: 15px auto 0 auto;
-}
-
-.siteNav a {
-    text-decoration: none;
-    /* to make the link fill the li area */
-    display: block;
-    color: #ffffff;
-}
-
-.siteNav li {
-	list-style: none;
-	float: left;
-	width: 15%;
-	height: 50px;
-	font-size: 150%;
-	border-radius: 5px;
-	text-align: center;
-	margin: 0 15px 15px 0;
-	line-height: 50px;
-}
-
-.siteNav li:hover {
-	background-color: #b0b0b0;
-}
-
-.siteNav li:active {
-	background-color: #e3e3e3;
-}
-
-/* Naviagation styling end */
 
 h2 {
     margin-top: 80px;
@@ -209,12 +160,12 @@ h2 {
     position: absolute;
     padding: 5px 10px;
     background-color: #db1f6a;
-    top: 297px;
+    top: 30%;
     border-radius: 3px;
     }
 #player-one-label {
-    left: 228px;
+    left: 17.5%;
     }
 #player-two-label {
-    left: 601px;
+    left: 67.5%;
     }
