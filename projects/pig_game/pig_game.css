@@ -21,10 +21,10 @@ h2 {
 .box {
     position: relative;
     width: 75%;
-    background-color: #abc5b7;
-    color: #5e4746;
+    background-color: #9ad379;
+    color: #fff;
     height: 400px;
-    margin: 20px 100px;
+    margin: 20px auto;
     box-shadow: 0 0 10px #3a3939;
     display: flex;
     justify-content: space-evenly;  
@@ -32,10 +32,6 @@ h2 {
 
 .playerOne, .playerTwo {
     flex-basis: 50%;
-    background-color: #6cfdb2ec;
-}
-.playerTwo {
-    background-color: #a5f5cb;
 }
 
 .score-box, .score-box-round {
@@ -96,7 +92,7 @@ h2 {
     top: 330px;
     padding: 12px 30px;
     border-radius: 10px;
-    background-color: #af7406;
+    background-color: #e21b1b;
     border: 0;
     padding: 0;
 }
@@ -116,7 +112,7 @@ h2 {
     height: 40px;
     line-height: 40px;
     padding: 0;
-    color: #000000;
+    color: #fff;
 }
 #button-start-stop {
     left: 325px;
