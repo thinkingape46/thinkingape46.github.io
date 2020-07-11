@@ -4,10 +4,10 @@ body {
 
 .box {
     position: relative;
-    width: 75%;
+    /* width: 75%; */
     background-color: #9ad379;
     color: #fff;
-    height: 400px;
+    height: 80%;
     margin: 20px auto;
     box-shadow: 0 0 10px #ffffff;
     display: flex;
@@ -23,8 +23,8 @@ body {
 }
 
 .score-box, .score-box-round {
-    height: 75px;
-    width: 75px;
+    height: 125px;
+    width: 125px;
     margin: 50px auto;
     text-align: center;
     background-color: #FFFFFF;
@@ -39,11 +39,56 @@ body {
     font-size: 2em;
 }
 #score-num-one, #score-num-two {
-    /* line-height: 75px; */
-    font-size: 3em;
+    position: relative;
+    top: 0;
+    font-size: 5em;
     margin-bottom: 0;
 }
 
+#player-one-label, #player-two-label {
+    font-size: 0.75em;
+    position: absolute;
+    padding: 10px 20px;
+    background-color: #db1f6a;
+    /* border-radius: 3px; */
+    width: inherit;
+    box-sizing: border-box;
+    bottom: 0;
+}
+
+/* Roll and hold buttons start */
+#player-one-roll, #player-two-roll, #player-one-hold, #player-two-hold, #button-start-stop {
+    position: absolute;
+    padding: 12px 30px;
+    border-radius: 10px;
+    background-color: #0bd43d;
+    width: 15%;
+    border: 0;
+    padding: 0;
+}
+#player-one-roll, #player-two-roll {
+    top: 75%;
+}
+#player-one-hold, #player-two-hold {
+    background-color: #e21b1b;
+    top: 88%;
+}
+#player-one-roll, #player-one-hold {
+    left: 17%;
+}
+#player-two-roll, #player-two-hold {
+    left: 68%
+}
+.button-roll-hold a, #button-start-stop {
+    display: block;
+    text-decoration: none;
+    line-height: 40px;
+    padding: 0;
+    color: #fff;
+}
+/* Roll and hold buttons end */
+
+/* Dice styling start */
 #dice {
     position: absolute;
     top: 150px;
@@ -52,60 +97,27 @@ body {
     height: 100px;
     left: 43%;
     animation-name: shake;
-    animation-duration: 500ms;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
+    animation-timing-function: linear;
+    animation-delay: 0ms;
 }
 @keyframes shake {
-    33% {transform: rotate(-1deg);}
-    66% {transform: rotate(1deg);}
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(-20deg);}
+    75% {transform: rotate(20deg);}
     100% {transform: rotate(0deg);}
 }
+/* Dice styling end */
 
-#player-one-roll, #player-two-roll, #player-one-hold, #player-two-hold, #button-start-stop {
-    position: absolute;
-    top: 275px;
-    padding: 12px 30px;
-    border-radius: 10px;
-    background-color: #0bd43d;
-    border: 0;
-    padding: 0;
-}
-#player-one-hold, #player-two-hold {
-    top: 330px;
-    padding: 12px 30px;
-    border-radius: 10px;
-    background-color: #e21b1b;
-    border: 0;
-    padding: 0;
-}
-
-#player-one-roll, #player-one-hold {
-    left: 138px;
-}
-#player-two-roll, #player-two-hold {
-    left: 513px;
-}
-
-.button-roll-hold a, #button-start-stop {
-    display: block;
-    text-decoration: none;
-    display: block;
-    width: 100px;
-    height: 40px;
-    line-height: 40px;
-    padding: 0;
-    color: #fff;
-}
 #button-start-stop {
+    position: absolute;
     left: 43%;
     top: 300px;
     width: 100px;
     height: 60px;
     line-height: 60px;
     text-decoration: none;
-}
-#button-start-stop {
     height: 60px;
     line-height: 60px;
     text-align: center;
@@ -130,25 +142,6 @@ body {
     padding-bottom: 5px;
 }
 
-#player-one-label, #player-two-label {
-    position: absolute;
-    padding: 10px 20px;
-    background-color: #db1f6a;
-}
-#player-one-label, #player-two-label {
-    position: absolute;
-    padding: 5px 10px;
-    margin-left: 0px;
-    background-color: #db1f6a;
-    top: 30%;
-    border-radius: 3px;
-    }
-#player-one-label {
-    left: 17.5%;
-    }
-#player-two-label {
-    left: 67.5%;
-    }
 
 /* Reversing index.css styling */
 .content h1, .content p{
