@@ -8,66 +8,86 @@
     <link rel="stylesheet" href="pig_game.css">
 </head>
 <body>
+    <header>
+        <h1>Thinkingape46</h1>
+    <nav class="siteNav">
+        <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="#">Code</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Arts</a></li>
+            <li><a href="#">Sports</a></li>
+            <li><a href="#">About Me</a></li>
+        </ul>
+    </nav>        
+    </header>
     <div class="container">
-        <header>
-            <h1>Thinkingape46</h1>
-        </header>
-        <nav class="siteNav">
-            <ul>
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="#">Code</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Arts</a></li>
-                <li><a href="#">Sports</a></li>
-                <li><a href="#">About Me</a></li>
-            </ul>
-        </nav>
-    <div class="content">
-    <div class="box">
-        <div class="players playerOne">
-            <div class="score-box">
-                <p id="score-num-one">0</p>
-                <p id="player-one-label">PLAYER ONE</p>
+        <div class="box">
+            <div class="row-one">
+                <div class="score-box-one">
+                    <p id="score-num-one">0</p>
+                    <p id="player-one-label">PLAYER ONE</p>
+                </div>
+                <div id="game-end" class="game-end">
+                    <p>1</p>
+                    <p>1</p>
+                    <p>1</p>
+                </div>
+                <div class="score-box-two">
+                    <p id="score-num-two">0</p>
+                    <p id="player-two-label">PLAYER TWO</p>
+                </div>
             </div>
-            <div class="score-box-round">                
-                <p id="score-num-round-one">0</p>
-            </div>
-            <div>
-                <button type="button" class="button-roll-hold" id="player-one-roll"><a href="#">ROLL</a></button>
-    
-                <button type="button" class="button-roll-hold" id="player-one-hold"><a href="#">HOLD</a></button>
-            </div>            
-        </div>
 
-        <div class="players playerTwo">
-            <div class="score-box">
-                <p id="score-num-two">0</p>
-                <p id="player-two-label">PLAYER TWO</p>
+            <div class="row-two">
+                <div class="round-score-one">                
+                    <p id="score-num-round-one">0</p>
+                </div>
+                <div id="dice-image" class="dice-image">
+                    <img id="dice" src="images/baby_pig.png" alt="dice">
+                </div>
+                <div class="round-score-two">                
+                    <p id="score-num-round-two">0</p>
+                </div>
             </div>
-            <div class="score-box-round">                
-                <p id="score-num-round-two">0</p>
-            </div>
-            <div>
-                <button type="button" class="button-roll-hold" id="player-two-roll"><a href="#">ROLL</a></button>
-                <button type="button" class="button-roll-hold" id="player-two-hold"><a href="#">HOLD</a></button>
-            </div>
-        </div>
+
+            <div class="row-three">
+                <div class="button-one">
+                    <button type="button" class="button-roll-hold" id="player-one-roll"><a href="#">ROLL</a></button>
         
-        <div id="center-section">
-        <div id="dice-image">
-            <img id="dice" src="images/baby_pig.png" alt="dice">
+                    <button type="button" class="button-roll-hold" id="player-one-hold"><a href="#">HOLD</a></button>
+                </div>
+
+                <div class="button-start">
+                    <a class="button-start-stop" id="button-start-stop" href="#">START</a>
+                </div>
+
+                <div class="button-two">
+                    <button type="button" class="button-roll-hold" id="player-two-roll"><a href="#">ROLL</a></button>
+                    <button type="button" class="button-roll-hold" id="player-two-hold"><a href="#">HOLD</a></button>
+                </div>
+
+
+            </div>
+
+            <div class="players playerOne">
+
+
+           
+            </div>
+
+            <div class="players playerTwo">
+
+
+
+            </div>
+            
+            <div id="center-section">
+
+
+            </div>
+    
         </div>
-        <div>
-            <a class="button-start-stop" id="button-start-stop" href="#">START</a>
-        </div>
-        </div>
-        <div id="game-end">
-            <p>1</p>
-            <p>1</p>
-            <p>1</p>
-        </div>        
-    </div>
-    </div>
     </div>
 
     <script src="pig_game.js"></script>
