@@ -6,8 +6,9 @@ body {
     position: relative;
     background-color: #9ad379;
     color: #fff;
+    width: 90%;
     height: 80%;
-    margin: 20px auto;
+    margin: 10px auto;
     box-shadow: 0 0 10px #ffffff;
     display: flex;
     justify-content: space-evenly;  
@@ -31,11 +32,6 @@ body {
     position: relative;
     color: #000;
 }
-@media (max-width: 480px) {
-    
-}
-
-
 
 .score-box-round {
     height: 50px;
@@ -61,6 +57,7 @@ body {
     box-sizing: border-box;
     bottom: 0;
 }
+
 
 /* Roll and hold buttons start */
 #player-one-roll, #player-two-roll, #player-one-hold, #player-two-hold, #button-start-stop {
@@ -154,4 +151,94 @@ body {
 	margin-left: 0px;
     margin-top: 0px;
     margin-bottom: 0;
+}
+
+@media (max-width: 480px) {
+    .content {
+        margin-bottom: 0;
+        height: 350px;
+    }
+    .box {
+        box-shadow: none;
+        height: 100%;
+    }
+    .score-box {
+        width: 50%;
+        height: 28%;
+        margin-top: 80px;
+        margin-bottom: 0;
+    }
+    .score-box-round {
+        height: 10%;
+        width: 20%;
+        margin: 5px auto;
+    }
+    #score-num-round-one, #score-num-round-two {
+        height: 40px;
+        line-height: 40px;
+    }
+    #player-one-label, #player-two-label {
+        font-size: 0.75em;
+        position: absolute;
+        padding: 5px 10px;
+        bottom: 0;
+    }
+    #player-one-roll, #player-two-roll, #player-one-hold, #player-two-hold, #button-start-stop {
+        position: absolute;
+        padding: 6px 15px;
+        border-radius: 2px;
+        background-color: #0bd43d;        
+        width: 20%;
+        border: 0;
+        padding: 0;
+    }
+    #player-one-hold, #player-two-hold {
+        background-color: #e21b1b;
+        top: 78%;
+    }
+    #player-one-roll, #player-one-hold {
+        left: 15%;
+    }
+    #player-one-roll, #player-two-roll {
+        top: 65%;
+    }
+    #player-two-roll, #player-two-hold {
+        left: 65%
+    }
+    #player-one-label, #player-two-label {
+        width: 100%;
+    }
+    #dice {
+        position: absolute;
+        top: 40%;
+        height: 70px;
+        left: 40.8%;
+    }
+    #button-start-stop {
+        position: absolute;
+        left: 40%;
+        top: 65%;
+        width: 20%;
+        height: 20%;
+        height: 60px;
+        line-height: 60px;
+    }
+    #game-end {
+    margin-top: 10px;
+    top: 0;
+    padding: 5px 10px;
+    display: block;
+    text-align: center;
+    background-color: #db1f6a;
+    color: #ffffff;
+    opacity: 0;
+    }
+    #game-end p {
+        margin: 2px auto 2px auto;
+        font-size: 10px;
+    }
+    #game-end p:first-child {
+        font-size: 12px;
+        padding-bottom: 5px;
+    }
 }
