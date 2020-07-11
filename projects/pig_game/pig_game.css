@@ -223,8 +223,8 @@ body {
     #dice {
         position: absolute;
         top: 40%;
-        height: 70px;
-        left: 40.5%;
+        height: 50px;
+        left: 43%;
     }
     #button-start-stop {
         position: absolute;
