@@ -4,7 +4,6 @@ body {
 
 .box {
     position: relative;
-    /* width: 75%; */
     background-color: #9ad379;
     color: #fff;
     height: 80%;
@@ -32,6 +31,12 @@ body {
     position: relative;
     color: #000;
 }
+@media (max-width: 480px) {
+    
+}
+
+
+
 .score-box-round {
     height: 50px;
     width: 50px;
