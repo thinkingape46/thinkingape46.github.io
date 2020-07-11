@@ -154,6 +154,15 @@ body {
 }
 
 @media (max-width: 480px) {
+    body {
+        background-repeat: no-repeat;
+    }
+    .siteNav li {
+        font-size: 120%;
+    }
+    .container {
+        padding-bottom: 30px;
+    }
     .content {
         margin-bottom: 0;
         height: 350px;
@@ -177,10 +186,13 @@ body {
         height: 40px;
         line-height: 40px;
     }
+    #score-num-one, #score-num-two {
+        font-size: 4em;
+    }
     #player-one-label, #player-two-label {
         font-size: 0.75em;
         position: absolute;
-        padding: 5px 10px;
+        padding: 0px 10px;
         bottom: 0;
     }
     #player-one-roll, #player-two-roll, #player-one-hold, #player-two-hold, #button-start-stop {
@@ -212,7 +224,7 @@ body {
         position: absolute;
         top: 40%;
         height: 70px;
-        left: 40.8%;
+        left: 40.5%;
     }
     #button-start-stop {
         position: absolute;
