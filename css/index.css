@@ -1,6 +1,7 @@
 body {
 	color: #fff;
 	background: linear-gradient(#525151, #afafaf);
+	background-repeat: no-repeat;
 	margin: 0 auto;
 	font-family: 'Roboto Mono', monospace;
 }
