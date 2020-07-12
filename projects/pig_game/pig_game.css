@@ -7,6 +7,7 @@ body {
 .box {
     background: linear-gradient(rgb(129, 156, 87), #fff);
     border-radius: 5px;
+    margin-top: 30px;
 }
 .row-one, .row-two, .row-three {
     color: #fff;
@@ -145,12 +146,12 @@ img {
 
 /* Roll and hold buttons start */
 .row-three {
-    height: 230px;
+    height: 200px;
 }
 .button-one, .button-two, .button-start {
     position: relative;
     flex: 0.5;    
-    margin: 5% auto;
+    margin: 5% auto 2% auto;
 }
 #player-one-roll, #player-two-roll, #player-one-hold, #player-two-hold, #button-start-stop {
     font-family: 'Roboto Mono', monospace;
@@ -171,6 +172,7 @@ img {
     position: absolute;
     width: 40%;
     right: 0;
+    cursor: grab;
 }
 #player-two-roll, #player-two-hold {
     position: absolute;
