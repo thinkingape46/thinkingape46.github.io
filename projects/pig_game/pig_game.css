@@ -300,4 +300,25 @@ button:hover, #button-start-stop:hover {
         line-height: 50px;
         width: 70%;
     }
+    .score-box-one, .score-box-two, .game-end {
+        flex: 1;
+    }
+    .game-end {
+        padding: 2px 2px;
+        text-align: center;
+        background-color: #db1f6a;
+        color: #ffffff;
+        box-sizing: border-box;
+        opacity: 0;
+    }
+    .game-end p {            
+        margin: 2px auto 2px auto;
+        font-size: 10px;
+        line-height: 10px;
+    }
+    .game-end p:first-child {
+        font-size: 20px;
+        padding-bottom: 5px;
+        line-height: 20px;
+    }
 }
