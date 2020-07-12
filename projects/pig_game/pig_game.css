@@ -204,14 +204,13 @@ button:hover, #button-start-stop:hover {
 
 /* ROW THREE END */
 
-
 @media (max-width: 480px) {
     h1 {
-        margin: 5px auto;
+        margin: 2px auto;
     }
     .siteNav {
-        margin: 2px auto;
-        height: 120px;
+        margin: 1px auto;
+        height: 110px;
         margin-right: 4px;
     }
     .siteNav a {
@@ -228,6 +227,7 @@ button:hover, #button-start-stop:hover {
     .container {
         width: 95%;
         margin: 2px auto;
+        padding-bottom: 10px;
     }
     .row-one {
         height: 170px;
@@ -279,5 +279,12 @@ button:hover, #button-start-stop:hover {
         height: 50px;
         line-height: 50px;
         left: 0;
+    }
+    #button-start-stop {
+        height: 50px;
+        font-size: 1em;
+        margin-top: 30px;
+        line-height: 50px;
+        width: 70%;
     }
 }
