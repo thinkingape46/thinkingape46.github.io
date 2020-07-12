@@ -7,47 +7,47 @@ body {
 .row-one, .row-two, .row-three {
     position: relative;
     color: #fff;
-    width: 90%;
-    height: 300px;
+    width: 80%;
     margin: 10px auto;
     display: flex;
     justify-content: space-around;
 }
 .score-box-one, .game-end, .score-box-two, .round-score-one, .dice-image, .round-score-two, .button-one, .button-start, .button-two {
     flex-basis: 33%;
-    height: 300px;
     width: 33%;
 }
 
 /* ROW ONE START */
 
-.row-one {    
-    background-color: rgb(150, 146, 146);
+.row-one {
+    height: 200px;
 }
 .score-box-one, .game-end, .score-box-two {
     position: relative;
     color: #000;
-    background-color: #fff;
     text-align: center;
+    margin: 0 auto;
+    height: 70%;
+}
+#score-num-one, #score-num-two {
+    height: 70%;
+    width: 50%;
+    background-color: #fff;
+    font-size: 5em;
     margin: 0 auto;
 }
 #player-one-label, #player-two-label {
-    position: absolute;
-    font-size: 2em;
-    padding: 10px 20px;
+    margin: 0 auto;
+    height: 30%;    
+    width: 50%;
+    font-size: 1em;
+    line-height: 100%;
+    padding: 15px 20px;
     background-color: #db1f6a;
     color: #fff;
-    width: 100%;
     box-sizing: border-box;
-    bottom: 0;
-    margin: 0;
 }
-#score-num-one, #score-num-two {
-    line-height: 300px;
-    position: relative;
-    font-size: 10em;
-    margin: 0;
-}
+
 .game-end {
     padding: 10px 40px;
     text-align: center;
@@ -78,10 +78,17 @@ body {
     font-size: 5em;
 }
 #score-num-round-one, #score-num-round-two {
-    height: inherit;
-    margin: 0;
+    height: 40%;
+    width: 40%;
+    line-height: 100%;
+    background-color: #fff;
+    font-size: 1em;
+    margin: 0 auto;
 }
 /* Dice styling start */
+#dice-image {
+    height: 100px;
+}
 #dice {
     animation-name: shake;
     animation-duration: 1s;
@@ -105,12 +112,12 @@ img {
 
 /* Roll and hold buttons start */
 .row-three {
-    height: 100px;
-    margin-top: 40px;
+    height: 150px;
 }
 #player-one-roll, #player-two-roll, #player-one-hold, #player-two-hold, #button-start-stop {
     background-color: #0bd43d;
-    width: 100%;
+    width: 75%;
+    margin: 0 auto;
     color: #fff;
     display: block;
     text-decoration: none;
@@ -119,6 +126,7 @@ img {
     text-align: center;
     font-size: 1.5em;
     border: none;
+    margin-bottom: 10px;
 }
 #player-one-hold, #player-two-hold {
     background-color: #e21b1b;
@@ -136,27 +144,13 @@ img {
 
 /* ROW THREE END */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Reversing index.css styling */
 .content h1, .content p{
 	margin-left: 0px;
     margin-top: 0px;
     margin-bottom: 0;
 }
-
+/* 
 @media (max-width: 480px) {
     body {
         background-repeat: no-repeat;
@@ -257,4 +251,4 @@ img {
         font-size: 12px;
         padding-bottom: 5px;
     }
-}
+} */
