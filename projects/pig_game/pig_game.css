@@ -1,8 +1,5 @@
 body {
-    position: relative;
-}
-.siteNav {
-    width: 1000px;
+    max-width: 100%;
 }
 .box {
     background: linear-gradient(rgb(129, 156, 87), #fff);
@@ -207,105 +204,80 @@ button:hover, #button-start-stop:hover {
 
 /* ROW THREE END */
 
-/* 
+
 @media (max-width: 480px) {
-    body {
-        background-repeat: no-repeat;
-    }
-    .siteNav li {
-        font-size: 120%;
-    }
-    .container {
-        padding-bottom: 30px;
-    }
-    .content {
-        margin-bottom: 0;
-        height: 350px;
-    }
-    .box {
-        box-shadow: none;
-        height: 100%;
-    }
-    .score-box {
-        width: 50%;
-        height: 28%;
-        margin-top: 80px;
-        margin-bottom: 0;
-    }
-    .score-box-round {
-        height: 50px;
-        width: 50px;
+    h1 {
         margin: 5px auto;
     }
-    #score-num-round-one, #score-num-round-two {
-        height: 50px;
-        line-height: 50px;
+    .siteNav {
+        margin: 2px auto;
+        height: 120px;
+        margin-right: 4px;
     }
-    #score-num-one, #score-num-two {
-        font-size: 4em;
+    .siteNav a {
+        transform: none;
     }
-    #player-one-label, #player-two-label {
-        font-size: 0.75em;
-        position: absolute;
-        padding: 0px 10px;
-        bottom: 0;
-    }
-    #player-one-roll, #player-two-roll, #player-one-hold, #player-two-hold, #button-start-stop {
-        position: absolute;
-        padding: 6px 15px;
-        border-radius: 2px;
-        background-color: #0bd43d;        
-        width: 20%;
-        border: 0;
-        padding: 0;
-    }
-    #player-one-hold, #player-two-hold {
-        background-color: #e21b1b;
-        top: 85%;
-    }
-    #player-one-roll, #player-one-hold {
-        left: 15%;
-    }
-    #player-one-roll, #player-two-roll {
-        top: 70%;
-    }
-    #player-two-roll, #player-two-hold {
-        left: 65%
-    }
-    #player-one-label, #player-two-label {
-        width: 100%;
-    }
-    #dice {
-        position: absolute;
-        top: 40%;
-        height: 50px;
-        left: 43%;
-    }
-    #button-start-stop {
-        position: absolute;
-        left: 40%;
-        top: 65%;
-        width: 20%;
-        height: 20%;
+    .siteNav li {
+        width: 30%;
+        transform: none;
         height: 60px;
         line-height: 60px;
+        font-size: 1.25em;
+        margin: 0 2px 2px 0;
     }
-    #game-end {
-    margin-top: 10px;
-    top: 0;
-    padding: 5px 10px;
-    display: block;
-    text-align: center;
-    background-color: #db1f6a;
-    color: #ffffff;
-    opacity: 0;
+    .container {
+        width: 95%;
+        margin: 2px auto;
     }
-    #game-end p {
-        margin: 2px auto 2px auto;
-        font-size: 10px;
+    .row-one {
+        height: 170px;
     }
-    #game-end p:first-child {
-        font-size: 12px;
-        padding-bottom: 5px;
+    #score-num-one, #score-num-two {
+        height: 70%;
+        font-size: 4em;
+        width: 90%;
     }
-} */
+    #player-one-label, #player-two-label {
+        height: 30%;    
+        width: 90%;
+        font-size: 0.8em;
+        padding: 15px 10px;
+        background-color: #db1f6a;
+    }
+    .score-round-one, .score-round-two, .dice-image {   
+        margin: 5px auto;
+    }
+    .round-score-one, .dice-image, .round-score-two {
+        font-size: 3em;
+    }
+    #score-num-round-one, #score-num-round-two {
+        height: 60%;
+        width: 70%;
+        font-size: 1em;
+    }
+    #score-num-round-one {
+        right: 14%;
+    }
+    #score-num-round-two {
+        left: 14%;
+    }
+    .row-three{
+        height: 150px;
+    }
+    #player-one-roll, #player-two-roll, #player-one-hold, #player-two-hold, #button-start-stop {
+        height: 100px;
+        line-height: 100px;
+    }
+    #player-one-roll, #player-one-hold {
+        width: 90%;
+        height: 50px;
+        line-height: 50px;
+        right: 0;
+    }
+    #player-two-roll, #player-two-hold {
+        width: 90%;
+        height: 50px;
+        line-height: 50px;
+        left: 0;
+    }
+}
