@@ -208,20 +208,24 @@ button:hover, #button-start-stop:hover {
     h1 {
         margin: 2px auto;
     }
+    ul {
+        margin: 5px auto;
+        width: 100%;
+        padding-left: 0;
+    }
     .siteNav {
         margin: 1px auto;
-        height: 110px;
-        margin-right: 4px;
+        height: 70px;
     }
     .siteNav a {
         transform: none;
     }
     .siteNav li {
-        width: 30%;
+        width: 32.85%;
         transform: none;
-        height: 60px;
-        line-height: 60px;
-        font-size: 1.25em;
+        height: 45px;
+        line-height: 45px;
+        font-size: 1em;
         margin: 0 2px 2px 0;
     }
     .container {
@@ -230,18 +234,27 @@ button:hover, #button-start-stop:hover {
         padding-bottom: 10px;
     }
     .row-one {
-        height: 170px;
+        height: 110px;
+    }
+    .score-box-one, .game-end, .score-box-two {
+        position: relative;
+        color: #000;
+        text-align: center;
+        margin: 8px auto 2px auto;
+        height: 70%;
+        line-height: 53px;
     }
     #score-num-one, #score-num-two {
         height: 70%;
-        font-size: 4em;
+        font-size: 3em;
         width: 90%;
     }
     #player-one-label, #player-two-label {
-        height: 30%;    
+        height: 30%;
+        line-height: 23px; 
         width: 90%;
-        font-size: 0.8em;
-        padding: 15px 10px;
+        font-size: 0.5em;
+        padding: 0 5px;
         background-color: #db1f6a;
     }
     .score-round-one, .score-round-two, .dice-image {   
