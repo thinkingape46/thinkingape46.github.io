@@ -4,7 +4,8 @@ body {
 .box {
     background: linear-gradient(rgb(129, 156, 87), #fff);
     border-radius: 5px;
-    margin-top: 30px;
+    margin: 30px auto 0 auto;
+    /* width: 700px; */
 }
 .row-one, .row-two, .row-three {
     color: #fff;
@@ -69,9 +70,10 @@ body {
     margin-left: 5%;
 }
 .game-end {
+    display: block;
     top: -700px;
-    height: 300px;
-    width: 450px;
+    height: 100px;
+    width: 200px;
     position: absolute;
     padding: 10px 40px;
     text-align: center;
@@ -103,7 +105,6 @@ body {
     padding-bottom: 5px;
 }
 .close-pop {
-    z-index: 1;
     position: absolute;
     background-color: #fa4b4b;
     margin-top: -2px;
@@ -278,7 +279,7 @@ button:hover, #button-start-stop:hover {
     .row-one {
         height: 110px;
     }
-    .score-box-one, .game-end, .score-box-two {
+    .score-box-one, .score-box-two {
         position: relative;
         color: #000;
         text-align: center;
@@ -308,7 +309,7 @@ button:hover, #button-start-stop:hover {
     #score-num-round-one, #score-num-round-two {
         height: 60%;
         width: 70%;
-        font-size: 1em;
+        font-size: 1.1em;
     }
     #score-num-round-one {
         right: 14%;
@@ -346,21 +347,34 @@ button:hover, #button-start-stop:hover {
         flex: 1;
     }
     .game-end {
+        position: absolute;
+        height: 200px;
+        width: 300px;
         padding: 2px 2px;
-        text-align: center;
-        background-color: #db1f6a;
-        color: #ffffff;
         box-sizing: border-box;
-        opacity: 0;
+        z-index: 1;
+    }
+    .score-box-one {
+        margin-right: 5%;
+    }
+    .score-box-two {
+        margin-left: 5%;
     }
     .game-end p {            
         margin: 2px auto 2px auto;
-        font-size: 10px;
-        line-height: 10px;
+        font-size: 15px;
+        line-height: 20px;
     }
     .game-end p:first-child {
+        margin: 10px;
         font-size: 20px;
         padding-bottom: 5px;
         line-height: 20px;
+    }
+    #close-pop {
+        height: 30px;
+        line-height: 30px;
+        width: 30px;
+        margin: 0;
     }
 }
