@@ -137,7 +137,7 @@ function holdDiceTwo() {
 // Player two game end
 
 function gameWinCheck() {
-    if (Number(playerOneScore.textContent) >= 1) {
+    if (Number(playerOneScore.textContent) >= 10) {
         
         document.getElementById("line-one").textContent = "PLAYER ONE WON";
         document.getElementById("line-two").textContent = `PLAYER ONE: ${playerOneScore.textContent}`;
