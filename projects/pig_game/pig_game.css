@@ -23,7 +23,9 @@ body {
 /* ROW ONE START */
 
 .row-one {
+    position: relative;
     height: 200px;
+    justify-content: space-evenly;
 }
 .score-box-one, .game-end, .score-box-two {
     position: relative;
@@ -60,13 +62,37 @@ body {
     box-sizing: border-box;
     bottom: 0;
 }
+.score-box-one {
+    margin-right: 5%;
+}
+.score-box-two {
+    margin-left: 5%;
+}
 .game-end {
+    top: -700px;
+    height: 300px;
+    width: 450px;
+    position: absolute;
     padding: 10px 40px;
     text-align: center;
-    background-color: #db1f6a;
+    background-color: #3ef58a;
     color: #ffffff;
     box-sizing: border-box;
-    opacity: 0;
+    z-index: 1;
+}
+.game-end-show {
+    top: 100px;
+    animation-name: game-end-show;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-delay: 0ms;
+}
+@keyframes game-end-show{
+    0% {top: -700px;}
+    60% {top: 100px;}
+    80% {top: 90px;}
+    100% {top: 100px;}
 }
 .game-end p {            
     margin: 2px auto 2px auto;
@@ -75,6 +101,19 @@ body {
 .game-end p:first-child {
     font-size: 24px;
     padding-bottom: 5px;
+}
+.close-pop {
+    z-index: 1;
+    position: absolute;
+    background-color: #fa4b4b;
+    margin-top: -2px;
+    top: 0;
+    right: 0;
+    height: 50px;
+    line-height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: grab;
 }
 /* ROW ONE END */
 
@@ -175,6 +214,7 @@ img {
     position: absolute;
     width: 40%;
     left: 0;
+    cursor: grab;
 }
 #player-one-roll, #player-two-roll {
     position: absolute;
@@ -203,6 +243,8 @@ button:hover, #button-start-stop:hover {
 /* Roll and hold buttons end */
 
 /* ROW THREE END */
+
+
 
 @media (max-width: 480px) {
     h1 {

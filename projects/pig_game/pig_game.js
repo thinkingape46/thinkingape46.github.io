@@ -1,9 +1,10 @@
 let startStop = document.getElementById("button-start-stop");
 var game_turn = "off";
 
+
+
 // Game Ended
 let gameEnd = document.getElementById("game-end")
-
 // Dice
 let dice = document.getElementById("dice");
 let diceImage = document.getElementById("dice-image");
@@ -49,7 +50,7 @@ function buttonsVisibility(game_turn) {
         playerOneHold.style.display = "block";
         playerTwoRoll.style.display = "none";
         playerTwoHold.style.display = "none";
-        gameEnd.style.opacity = 0;        
+        gameEnd.classList.remove("game-end-show");        
     }
     if (game_turn === "two") {
         playerTwoRoll.style.display = "block";
@@ -62,7 +63,6 @@ function buttonsVisibility(game_turn) {
         playerOneHold.style.display = "none";
         playerTwoRoll.style.display = "none";
         playerTwoHold.style.display = "none";
-        gameEnd.style.opacity = 1;        
         playerOneScore.textContent = 0;
         playerTwoScore.textContent = 0;
         playerOneRoundScore.textContent = 0;
@@ -70,6 +70,7 @@ function buttonsVisibility(game_turn) {
         startStop.textContent = "START";
         startStop.style.backgroundColor = "#0bd43d";
         dice.src = "images/baby_pig.png";
+        gameEnd.classList.add("game-end-show");
     }
 }
 
@@ -137,17 +138,24 @@ function holdDiceTwo() {
 
 function gameWinCheck() {
     if (Number(playerOneScore.textContent) >= 100) {
-        gameEnd.innerHTML = `<p>PLAYER ONE WON</p>
-        <p>PlAYER ONE: ${playerOneScore.textContent}</p>
-        <p>PlAYER TWO: ${playerTwoScore.textContent}</p>`
+        
+        document.getElementById("line-one").textContent = "PLAYER ONE WON";
+        document.getElementById("line-two").textContent = `PLAYER ONE: ${playerOneScore.textContent}`;
+        document.getElementById("line-three").textContent = `PLAYER TWO: ${playerTwoScore.textContent}`;
         game_turn = "end";
         buttonsVisibility(game_turn);
     }
     if (Number(playerTwoScore.textContent) >= 100) {
-        gameEnd.innerHTML = `<p>PLAYER TWO WON</p>
-        <p>PLAYER ONE: ${playerOneScore.textContent}</p>
-        <p>PLAYER TWO: ${playerTwoScore.textContent}</p>`
+        document.getElementById("line-one").textContent = "PLAYER TWO WON";
+        document.getElementById("line-two").textContent = `PLAYER ONE: ${playerOneScore.textContent}`;
+        document.getElementById("line-three").textContent = `PLAYER TWO: ${playerTwoScore.textContent}`;
         game_turn = "end";
         buttonsVisibility(game_turn);
     }
+}
+
+hidePop = document.getElementById("close-pop");
+hidePop.addEventListener("click", hidePopFunc)
+function hidePopFunc() {
+    gameEnd.classList.remove("game-end-show"); 
 }
