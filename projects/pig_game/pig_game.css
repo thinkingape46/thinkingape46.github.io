@@ -77,7 +77,9 @@ body {
     position: absolute;
     padding: 10px 40px;
     text-align: center;
-    background-color: #3ef58a;
+    background: linear-gradient(#ff8484, #24e9a7);
+    border: 2px solid #fff;
+    border-radius: 5px;
     color: #ffffff;
     box-sizing: border-box;
     z-index: 1;
@@ -376,5 +378,5 @@ button:hover, #button-start-stop:hover {
         line-height: 30px;
         width: 30px;
         margin: 0;
-    }
+    }    
 }
