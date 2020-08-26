@@ -108,25 +108,27 @@ header {
 /* Container style ends */
 
 /* Thumbnail styling start */
+.thumbnails {
+	display: flex;
+	justify-content: center;
+}
+
 .thumbnail-object img {
 	height: 150px;
 	width: 150px;
-	margin-left: 20px;
 	display: block;
 }
 .thumbnail-object {
-	float: left;
+	height: 150px;
+	width: 150px;
 	position: relative;
+	margin-left: 20px;
 }
-.thumbnail-object:hover {
-	transition: all 1s;
-	transform: scale(1.1);
-}
+
 .thumbnail-description {
 	position: absolute;
 	background-color: rgba(0,0,0,0.25);
 	text-align: center;
 	width: 150px;
 	bottom: 0;
-	margin-left: 20px;
 }
