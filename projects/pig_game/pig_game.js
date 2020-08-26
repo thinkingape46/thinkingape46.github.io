@@ -43,7 +43,7 @@ function buttonsVisibility(game_turn) {
         playerTwoRoundScore.textContent = 0;   
         startStop.textContent = "START";
         startStop.style.backgroundColor = "#0bd43d";        
-        dice.src = "images/baby_pig.png";
+        dice.src = "images/baby_pig.svg";
     }
     if (game_turn === "one") {
         playerOneRoll.style.display = "block";
@@ -69,7 +69,7 @@ function buttonsVisibility(game_turn) {
         playerTwoRoundScore.textContent = 0;  
         startStop.textContent = "START";
         startStop.style.backgroundColor = "#0bd43d";
-        dice.src = "images/baby_pig.png";
+        dice.src = "images/baby_pig.svg";
         gameEnd.classList.add("game-end-show");
     }
 }
