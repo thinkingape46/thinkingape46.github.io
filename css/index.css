@@ -20,8 +20,10 @@ header {
 
 .siteNav ul {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	flex-wrap: wrap;
+	padding-right: 10px;
+    padding-left: 10px;
 }
 
 .siteNav a {	
@@ -36,10 +38,10 @@ header {
 	list-style: none;
 	flex-basis: 15%;
 	text-align: center;
-	margin: 0 10px 10px 0;
 	align-content: center;
 	transition: all 1s;
 	background-color: hsl(168, 100%, 30%);
+	margin: 0 auto;
 }
 
 @media (max-width: 568px) {
@@ -127,48 +129,4 @@ header {
 	width: 150px;
 	bottom: 0;
 	margin-left: 20px;
-}
-/* Thumbnail styling end */
-
-
-/* @media (max-width: 480px) {
-	.siteNav {
-		height: 120px;
-		margin-right: 20px;
-	}
-    .siteNav a {
-		transform: none;
-	}
-	.siteNav li {
-		width: 31%;
-		transform: none;
-		margin: 0 5px 5px auto;		
-	}
-	.container {
-		width: 100%;
-	}
-	.content {
-		width: 95%;
-		height: 400px;
-		margin-top: 0;
-	}
-	
-} */
-
-.group:before,
-.group:after {
-  content: "";
-  display: table;
-}
-
-.group:after {
-  clear: both;
-}
-
-.group {
-  zoom: 1;
-}
-body {
-	margin: 0;
-	padding: 0;
 }
