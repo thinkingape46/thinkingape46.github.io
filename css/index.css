@@ -45,6 +45,16 @@ header {
 	margin: 0 auto;
 }
 
+.thumbnails {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.thumbnail-object {
+	flex-basis: 25%;
+}
+
 @media (max-width: 568px) {
 	.siteNav li {
 		flex-basis: 48%;
@@ -52,6 +62,12 @@ header {
 	}
 	h1 {
 		font-size: 1.5rem;
+	}
+	.thumbnail-object {
+		flex-basis: 1;
+	}
+	.thumbnail-object {
+		flex-basis: 50%;
 	}
 }
 
@@ -63,8 +79,10 @@ header {
 	h1 {
 		font-size: 1.5rem;
 	}
+	.thumbnail-object {
+		flex-basis: 33%;
+	}
 }
-
 @media (min-width: 968px) {
 	.siteNav li {
 		transform: skewX(15deg);
@@ -109,10 +127,6 @@ header {
 /* Container style ends */
 
 /* Thumbnail styling start */
-.thumbnails {
-	display: flex;
-	justify-content: center;
-}
 
 .thumbnail-object img {
 	height: 150px;
@@ -123,7 +137,7 @@ header {
 	height: 150px;
 	width: 150px;
 	position: relative;
-	margin-left: 20px;
+	margin-bottom: 10px;
 }
 
 .thumbnail-description {
