@@ -1,6 +1,6 @@
 body {
 	color: #fff;
-	background: linear-gradient(#525151, #afafaf);
+	background: linear-gradient(#080808, #afafaf);
 	margin: 0 auto;
 	font-family: 'Roboto Mono', monospace;
 }
@@ -16,6 +16,7 @@ header {
 
 .siteNav {
 	margin: 15px auto 0 auto;
+	display: none;
 }
 
 .siteNav ul {
@@ -127,7 +128,7 @@ header {
 
 .thumbnail-description {
 	position: absolute;
-	background-color: rgba(0,0,0,0.25);
+	background-color: rgb(54, 54, 54);
 	text-align: center;
 	width: 150px;
 	bottom: 0;
