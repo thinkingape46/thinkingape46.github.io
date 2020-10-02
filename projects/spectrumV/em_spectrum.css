@@ -1,5 +1,6 @@
 body {
-    width: 100%;
+    font-family: monospace, sans-seriff;
+    max-width: 100%;
 }
 
 .container {
@@ -7,9 +8,9 @@ body {
     height: 100vh;
 }
 
-h2 {
+#heading {
+    font-size: 1.25rem;
     text-align: center;
-    font-family: 'Permanent Marker', cursive;
 }
 
 #table {
@@ -17,7 +18,7 @@ h2 {
 }
 
 #table {
-    width: 600px;
+    max-width: 600px;
     height: 400px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -41,4 +42,10 @@ h2 {
 
 #teal {
     background-color: #32936f;
+}
+
+@media (max-width: 400px) {
+  #table {    
+    max-width: 90%;
+  }
 }
