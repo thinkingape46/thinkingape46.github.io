@@ -2,19 +2,25 @@ body {
     width: 100%;
 }
 
+.container {
+    width: 100vw;
+    height: 100vh;
+}
+
 h2 {
     text-align: center;
     font-family: 'Permanent Marker', cursive;
 }
 
-table {
+#table {
     margin: auto;
 }
 
-th {
-    width: 175px;
-    height: 600px;
-    border: 10px #d6d6d6 solid;
+#table {
+    width: 600px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 #violet {
