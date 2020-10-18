@@ -15,7 +15,7 @@ body {
     display: flex;
     z-index: 4;
     height: 60px;
-    background-color: black;
+    background-color: rgba(0, 23, 64, 0.6);
 }
 .nav-list {
     display: flex;
@@ -74,13 +74,39 @@ body {
     box-sizing: border-box;
     margin: 0;
     overflow: hidden;
+    z-index: 1;
 }
-#earth, #astronaut {
+#earth {
+    height: 1100px;
+    width: 1100px;
+    background-color: #001740;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: -3%;
+    left: -18%;
+    box-shadow: 0 0 30px #b8d2ff;
+    z-index: 3;
+}
+#map {
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+}
+#astronaut {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
+    z-index: 4;
+    animation: float-in-space 5s ease-in-out infinite;
+}
+@keyframes float-in-space {
+    0% {top: 0%; left: 0%;}
+    25% {top: -1%; left: 1%;}    
+    75% {top: 1%; left: -1%;}
+    100% {top: 0%; left: 0%;}
 }
 .welcome-section_text {
 position: absolute;
@@ -108,11 +134,18 @@ font-weight: 200;
         font-size: 1.1rem;
     }
 }
-#triangle {
-    border: none;
-    height: 15px;
-    width: 15px;
-    transition: all 2s linear;
+.triangle {
+    background-color: #fff;
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    animation: star-glow 1s ease-in-out infinite;
+}
+@keyframes star-glow {
+    0% {box-shadow: 0 0 1px #fff;}
+    20% {box-shadow: 0 0 8px #fff;}
+    80% {box-shadow: 0 0 8px #fff;}
+    100% {box-shadow: 0 0 1px #fff;}
 }
 .arrow-double-link {
     position: absolute;
@@ -121,6 +154,7 @@ font-weight: 200;
     transform: translateX(-50%);
     height: 40px;
     animation: arrow-animation 1s ease-in-out infinite;
+    z-index: 10;
 }
 @keyframes arrow-animation {
     0% {bottom: 20px;}
