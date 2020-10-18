@@ -65,6 +65,7 @@ body {
 /***************** Navigation Bar End ************/
 /*************** Welcome Section Start *************/
 #welcome-section {
+    background-color: #000;
     color: #fff;
     position: relative;
     height: 100vh;
@@ -73,7 +74,14 @@ body {
     box-sizing: border-box;
     margin: 0;
     overflow: hidden;
-} 
+}
+#earth, #astronaut {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
 .welcome-section_text {
 position: absolute;
 width: 80%;
