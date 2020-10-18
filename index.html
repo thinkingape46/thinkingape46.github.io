@@ -1,46 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>Home Page - Thinkingape46</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="css/index.css">
-		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
-		<meta name="google-site-verification" content="hHcgob94hTfKzDqe_BTHVgxOSfAOJ9TVq0DSFCgbygQ" />
-	</head>
-	<body>
-		<div class="container">
-			<header>
-				<h1>Thinkingape46</h1>
-			</header>
-			<nav class="siteNav">
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="#">Code</a></li>
-					<li><a href="#">Blog</a></li>
-					<li><a href="#">Arts</a></li>
-					<li><a href="#">Sports</a></li>
-					<li><a href="#">About Me</a></li>
-				</ul>
-			</nav>
-			<div class="content">
-				<h1>Hello! Welcome to my page</h1>
-				<p>Here are some of the tiny bits I am involved with...</p>
-				<div class="thumbnails">
-					<div class="thumbnail_object">
-						<a href="https://thinkingape46.github.io/Marie-Curie-tribute-page/" target="_blank"><img class="thumbnail_image" src="images/marie-curie.svg" alt="vector potrait of Marie Curie"></a>
-						<div class="thumbnail_description">Marie Curie</div>
-					</div>
-					<div class="thumbnail_object spectrumV">
-						<a href="projects/spectrumV/em_spectrum.html" target="_blank"><img class="thumbnail_image" src="projects/spectrumV/spectrumVthumb.png" alt="spectrumV_project"></a>
-						<div class="thumbnail_description">Spectrum V</div>
-					</div>
-					<div class="thumbnail_object pig-game">
-						<a href="projects/pig_game/pig_game.html" target="_blank"><img class="thumbnail_image" src="projects/pig_game/images/baby_pig.svg" alt="pig game project"></a>
-						<div class="thumbnail_description">Play Pig</div>
-					</div>
-				</div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,100&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <title>FreeCodeCamp Personal Portfolio</title>
+</head>
+<body>
+    <nav id="navbar">
+        <ul class="nav-list">
+            <li class="nav-list_item"><a class="nav-link" href="#welcome-section">About Me</a></li>
+            <li class="nav-list_item"><a class="nav-link" href="#projects">Portfolio</a></li>
+            <li class="nav-list_item"><a class="nav-link" href="#footer">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="welcome-section">
+        <div class="welcome-section_text">
+            <h1 id="welcome-section_heading">Hello! This is Jagadeesh Kumar</h1>
+            <h3 id="welcome-section_sub-heading">a Front End Developer</h3>
+        </div>
 
-			</div>
-	</body>
+        <a href="#projects" class="arrow-double-link"><img src="assets/images/arrow-double.svg" alt="" class="arrow-button"></a>        
+    </section>
+
+    <section id="projects">
+        <p class="projects_text">These are some of the projects I have worked on.</p>
+        <div class="project-grid">
+            <div class="project-tile">
+                <a href="https://thinkingape46.github.io/FreeCodeCamp_Marie-Curie-tribute-page/" target="_blank" class="project-link"><img class="project-image" src="assets/images/tribute-page.jpg" alt="tribute page thumbnail"></a>
+                <p class="project-title">Tribute Page</p>
+            </div>
+            <div class="project-tile">
+                <a href="https://thinkingape46.github.io/FreeCodeCamp_survey-form/" target="_blank" class="project-link"><img class="project-image" src="assets/images/survey-form.jpg" alt="survey form thumbnail"></a>
+                <p class="project-title">Survey Form</p>
+            </div>
+            <div class="project-tile">
+                <a href="https://thinkingape46.github.io/FreeCodeCamp_technical-documentation/" target="_blank" class="project-link"><img class="project-image" src="assets/images/technical-documentation.jpg" alt="technical documentation thumbnail"></a>
+                <p class="project-title">Technical Documentation</p>
+            </div>
+            <div class="project-tile">
+                <a href="https://thinkingape46.github.io/FreeCodeCamp_product-landing-page/" target="_blank" class="project-link"><img class="project-image" src="assets/images/travel-site.jpg" alt="product landing page thumbnail"></a>
+                <p class="project-title">Product Landing Page</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="footer_sub-heading">
+            <p class="text text--narrow text--large text--center">Contact Me</p>
+        </div>
+        <div class="footer-social">
+            <a target="_blank" href="https://github.com/thinkingape46" id="profile-link" class="profile-link"><img src="assets/images/github.svg" alt="github icon" class="github social-icon social-icon--footer"></a>
+            <a target="_blank" href="https://www.linkedin.com/in/jagadeesh59621/" class="profile-link"><img src="assets/images/linkedin.svg" alt="linkedin icon" class="linkedin social-icon social-icon--footer"></a>
+        </div>
+    </footer>
+
+
+    <script src="assets/scripts/scripts.js"></script>
+</body>
 </html>

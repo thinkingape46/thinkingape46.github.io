@@ -1,0 +1,293 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'roboto', sans-serif;
+    margin: 0;
+    background: linear-gradient(45deg, #fff, #000);
+}
+
+/***************** Navigation Bar Start ************/
+#navbar {
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    z-index: 4;
+    height: 60px;
+    background-color: black;
+}
+.nav-list {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding: 0;
+    justify-content: flex-end;
+}
+.nav-list_item {
+    list-style: none;
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+}
+/* Media queries */
+@media (max-width: 650px) {
+    .nav-list {
+        justify-content: center;
+    }
+    .nav-list_item {
+        font-size: 1rem;
+        padding: 15px;
+    }
+}
+@media (max-width: 400px) {
+    #navbar {
+        height: 50px;
+    }
+    .nav-list {
+        margin: auto 12px;
+    }
+    .nav-list_item {
+        padding: 0 10px;
+        font-size: 1rem;
+    }
+}
+@media (max-width: 300px) {
+    .nav-list_item {
+        font-size: 0.8rem;
+    }
+}
+/***************** Navigation Bar End ************/
+/*************** Welcome Section Start *************/
+#welcome-section {
+    color: #fff;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    border-bottom: 10px solid #000;
+    box-sizing: border-box;
+    margin: 0;
+    overflow: hidden;
+} 
+.welcome-section_text {
+position: absolute;
+width: 80%;
+top: 50%;
+left: 50%;
+transform: translateX(-50%) translateY(-50%);
+text-align: center;
+z-index: 3;
+font-weight: 200;
+}
+
+#welcome-section_heading {
+    font-size: 2.5rem;
+    font-weight: 200;
+    text-shadow: 0 0 5px #fff;
+}
+#welcome-section_sub-heading {
+    font-size: 1.5rem;
+    font-weight: 200;
+    text-shadow: 0 0 2px #fff;
+}
+@media (max-width: 400px) {
+    #welcome-section_heading {
+        font-size: 1.1rem;
+    }
+}
+#triangle {
+    border: none;
+    height: 15px;
+    width: 15px;
+    transition: all 2s linear;
+}
+.arrow-double-link {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 40px;
+    animation: arrow-animation 1s ease-in-out infinite;
+}
+@keyframes arrow-animation {
+    0% {bottom: 20px;}
+    50% {bottom: 30px;}
+    100% {bottom: 20px;}
+}
+@media (max-width: 400px) {
+    .arrow-double-link {
+        width: 100px;
+        height: 50px;
+    }
+}
+.arrow-button {
+    height: 100%;
+    width: 100%;
+}
+/***** media queries welcome section */
+@media (max-width: 768px) {
+    #welcome-section_heading {
+        font-size: 1.5rem;
+    }
+    #welcome-section_sub-heading {
+        font-size: 1.1rem;
+    }
+}
+@media (max-width: 650px) {
+    .arrow-double-link {
+        height: 60px;
+    }
+}
+@media (max-width: 300px) {
+    #welcome-section_heading {
+        font-size: 1rem;
+    }
+    #welcome-section_sub-heading {
+        font-size: 0.7rem;
+    }
+}
+
+/*************** Welcome Section Start *************/
+
+/********** Project Section start ************/
+#projects {
+    padding: 40px 0px;
+    box-sizing: border-box;
+    margin: auto;
+    height: 80vh;
+}
+.projects_text {
+    font-family: 'exo 2', sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 10px;
+    color: #000;
+}
+.project-grid {
+    display: grid;
+    width: 50%;
+    grid-template-columns: 200px 200px;
+    justify-content: center;
+    grid-template-rows: 200px 200px;
+    gap: 20px 20px;
+    margin: auto;
+    justify-items: stretch;
+}
+.project-tile {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgb(197, 196, 196);
+}
+.project-link {
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+.project-image {    
+    height: 100%;
+    width: 100%;
+    transition: all 0.2s ease-out;
+}
+.project-image:hover {
+    transform: scale(1.05);
+}
+.project-title {
+    position: absolute;
+    display: block;
+    width: 100%;
+    margin: 0;
+    height: 40px;
+    line-height: 40px;
+    bottom: -100%;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+    transition: all 0.2s ease-out;
+}
+.project-title--show {
+    bottom: 0%;
+}
+/* Media queries */
+@media (max-width: 768px) {
+    .project-grid {
+        grid-template-columns: 150px 150px;
+        grid-template-rows: 150px 150px;
+    }
+    .projects_text {
+        font-size: 1.1rem;
+    }
+}
+@media (max-width: 300px) {
+    .project-grid {
+        grid-template-columns: 100px 100px;
+        grid-template-rows: 100px 100px;
+    }
+    .projects_text {
+        font-size: 1.1rem;
+    }
+    #projects {
+        height: auto;
+    }
+    #footer {
+        height: auto;
+    }
+}
+
+/************ Project Section end ************/
+
+/* Footer social start */
+#footer {
+    font-family: 'exo 2', sans-serif;
+    background-color:#000;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    height: 20vh;
+}
+.about-us {
+    margin: 10px auto;
+}
+.footer_sub-heading {
+    padding: 5px;
+}
+.footer-social {
+    box-sizing: border-box;
+    margin: 10px auto;
+    display: flex;
+}
+.profile-link {
+    padding: 10px;
+}
+.social-icon {
+    width: 50px;
+}
+.text {
+    margin: 5px auto;
+}
+.text--narrow {
+    /* To reduce the width of text column */
+    width: 75%;
+}
+.text--center {
+    text-align: center;
+}
+.text--large {
+    /* meant for sub-heading */
+    font-size: 1.2rem;
+}
+@media (max-width: 650px) {
+    .social-icon--footer {
+        margin: 0 5px;
+       }
+}
+.section_about-us {
+    padding: 10px 0;
+}
+
+/* Footer social end */
