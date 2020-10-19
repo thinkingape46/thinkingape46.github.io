@@ -15,7 +15,7 @@ body {
     display: flex;
     z-index: 4;
     height: 60px;
-    background-color: rgba(0, 23, 64, 0.6);
+    background-color: rgba(0, 43, 120, 0.6);
 }
 .nav-list {
     display: flex;
@@ -77,14 +77,14 @@ body {
     z-index: 1;
 }
 #earth {
-    height: 1100px;
-    width: 1100px;
+    height: 500px;
+    width: 500px;
     background-color: #001740;
     border-radius: 50%;
     overflow: hidden;
     position: absolute;
-    top: -3%;
-    left: -18%;
+    top: 17%;
+    left: 7%;
     box-shadow: 0 0 30px #b8d2ff;
     z-index: 3;
 }
@@ -95,18 +95,19 @@ body {
 }
 #astronaut {
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
     z-index: 4;
-    animation: float-in-space 5s ease-in-out infinite;
+    height: 250px;
+    top: 37%;
+    left: 33%;
+    transform-origin: 50% 50%;
+    animation: float-in-space 5s linear infinite;
 }
 @keyframes float-in-space {
-    0% {top: 0%; left: 0%;}
-    25% {top: -1%; left: 1%;}    
-    75% {top: 1%; left: -1%;}
-    100% {top: 0%; left: 0%;}
+    0% {transform: translateX(0px) translateY(0px) rotate(0deg);}
+    25% {transform: translateX(5px) translateY(5px) rotate(-5deg);}
+    50% {transform: translateX(0px) translateY(0px) rotate(0deg);}
+    75% {transform: translateX(-5px) translateY(-5px) rotate(5deg);}
+    100% {transform: translateX(0x) translateY(0px) rotate(0deg);}
 }
 .welcome-section_text {
 position: absolute;
@@ -136,8 +137,8 @@ font-weight: 200;
 }
 .triangle {
     background-color: #fff;
-    height: 7px;
-    width: 7px;
+    height: 5px;
+    width: 5px;
     border-radius: 50%;
     animation: star-glow 1s ease-in-out infinite;
 }
@@ -161,12 +162,6 @@ font-weight: 200;
     50% {bottom: 30px;}
     100% {bottom: 20px;}
 }
-@media (max-width: 400px) {
-    .arrow-double-link {
-        width: 100px;
-        height: 50px;
-    }
-}
 .arrow-button {
     height: 100%;
     width: 100%;
@@ -183,6 +178,28 @@ font-weight: 200;
 @media (max-width: 650px) {
     .arrow-double-link {
         height: 60px;
+    }
+}
+@media (max-width: 400px) {
+    .arrow-double-link {
+        width: 100px;
+        height: 50px;
+    }
+    #earth {
+        height: 300px;
+        width: 300px;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+    #astronaut {
+        height: 150px;
+        top: 39%;
+        left: 31%;
+    }
+    .triangle {
+        height: 3px;
+        width: 3px;
     }
 }
 @media (max-width: 300px) {

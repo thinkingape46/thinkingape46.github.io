@@ -26,7 +26,7 @@ function insertTriangles() {
         var triangles = 30;
     }
     else {
-        var triangles = 50;
+        var triangles = 70;
     }
 
     for (i = 0; i < triangles; i++) {
