@@ -1,5 +1,6 @@
 :root {
-    --lightBlueTransparent: rgba(0, 43, 120, 0.6);
+    --lightBlueTransparent: rgba(0, 43, 120, 0.7);    
+    --lightBlueVeryTransparent: rgba(0, 43, 120, 0.5);
     --mainBlueOpaque: rgb(42, 106, 226);
 }
 
@@ -82,13 +83,14 @@ body {
     z-index: 1;
 }
 #earth {
-    height: 500px;
-    width: 500px;
+    height: 450px;
+    width: 450px;
     background-color: #001740;
     border-radius: 50%;
     overflow: hidden;
     position: absolute;
-    top: 17%;
+    top: 54%;
+    transform: translateY(-50%);
     left: 7%;
     box-shadow: 0 0 30px #b8d2ff;
     z-index: 3;
@@ -101,7 +103,7 @@ body {
 #astronaut {
     position: absolute;
     z-index: 4;
-    height: 250px;
+    height: 200px;
     top: 37%;
     left: 33%;
     transform-origin: 50% 50%;
@@ -117,19 +119,14 @@ body {
 .welcome-section_text {
     position: absolute;
     text-align: center;
-    right: 0;
-    top: 50%;
+    right: 10%;
+    top: 54%;
     transform: translateY(-50%);
-    background-color: var(--lightBlueTransparent);
-    border: 1px solid var(--mainBlueOpaque);
-    box-shadow: 0 0 10px #fff;
     border-radius: 5px;
     padding: 30px;
     box-sizing: border-box;
-    margin-right: 150px;
-    height: 500px;
-    width: 450px;
-    z-index: 3;
+    width: auto;
+    z-index: 5;
     font-weight: 200;
     overflow: hidden;
 }
@@ -178,20 +175,29 @@ body {
     left: 50%;
     transform: translateX(-50%);
     height: 40px;
-    animation: arrow-animation 0.5s ease-in-out infinite;
+    animation: arrow-animation 1s ease-in-out infinite;
     z-index: 10;
 }
 @keyframes arrow-animation {
-    0% {bottom: 20px;}
-    50% {bottom: 23px;}
-    100% {bottom: 20px;}
+    0% {bottom: 5px;}
+    50% {bottom: 15px;}
+    100% {bottom: 5px;}
 }
 .arrow-button {
     height: 100%;
     width: 100%;
 }
 /***** media queries welcome section ********/
-@media (max-width: 768px) {
+
+@media (max-width: 1440px) {
+    #earth {
+        height: 400px;
+        width: 400px;
+    }
+    .welcome-section_text {
+        right: 8%;
+        width: 35%;
+    }
     #welcome-section_heading {
         font-size: 1.5rem;
     }
@@ -199,12 +205,39 @@ body {
         font-size: 1.1rem;
     }
 }
-@media (max-width: 650px) {
+@media (max-width: 1024px) {
+    #earth {
+        height: 300px;
+        width: 300px;
+        left: 5%;
+    }
+    #astronaut {
+        height: 144px;
+        top: 43%;
+    }
+    .welcome-section_text {
+        right: 4%;
+        width: 40%;
+        padding: 30px 10px;
+    }
+    #profile-picture {
+        height: 80px;
+        width: 80px;
+    }
+    #welcome-section_heading {
+        font-size: 1.2rem;
+    }
+    #welcome-section_sub-heading {
+        font-size: 1.1rem;
+    }
+    #welcome-section_description {
+        font-size: 0.9rem;
+    }
     .arrow-double-link {
-        height: 60px;
+        height: 30px;
     }
 }
-@media (max-width: 400px) {
+@media (max-width: 768px) {
     #welcome-section {
         display: flex;
     }
@@ -215,22 +248,71 @@ body {
         margin: auto;
         transform: none;
         height: auto;
+        padding: 30px 10px;
         width: 80%;
-        z-index: 10 !important;
+        background-color: var(--lightBlueTransparent);
+        border: 1px solid var(--mainBlueOpaque);
+        box-shadow: 0 0 10px #fff;
     }
     #profile-picture {
         margin: 0 auto;
+        height: 75px;
+        width: 75px;
     }
     #welcome-section_heading {
-        font-size: .9rem;
+        font-size: 1.3rem;
+        margin: 15px auto 20px auto;
+    }
+    #welcome-section_sub-heading {
+        font-size: 1.2rem;
+        margin: 5px auto 15px auto;
+    }
+    #welcome-section_description {
+        width: 70%;
+        font-size: 1rem;
+        margin: 10px auto;
+    }
+    .arrow-double-link {
+        width: 100px;
+        height: 100px;
+    }
+    #earth {
+        display: block;
+        height: 700px;
+        width: 700px;
+        top: 1%;
+        left: 0%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+    #astronaut {
+        height: 150px;
+        top: 7%;
+        left: 31%;
+    }
+    .triangle {
+        height: 5px;
+        width: 5px;
+    }
+}
+@media (max-width: 650px) {
+    .arrow-double-link {
+        height: 60px;
+    }
+}
+@media (max-width: 425px) {
+    .welcome-section_text {
+    width: 85%;
+    }
+    #welcome-section_heading {
+        font-size: 1.2rem;
         margin: 8px auto 15px auto;
     }
     #welcome-section_sub-heading {
-        font-size: 0.8rem;
+        font-size: 1.1rem;
         margin: 4px auto 15px auto;
     }
     #welcome-section_description {
-        font-size: .7rem;
+        font-size: 0.9rem;
         margin: 4px auto;
     }
     .arrow-double-link {
@@ -238,28 +320,44 @@ body {
         height: 100px;
     }
     #earth {
-        height: 700px;
-        width: 700px;
-        top: -6%;
-        left: -19%;
-        transform: translateX(-50%) translateY(-50%);
+        display: none;
     }
     #astronaut {
         height: 100px;
-        top: 7%;
-        left: 31%;
+    }
+}
+@media (max-width: 300px) {
+    #navbar {
+        height: 30px;
+    }
+    .welcome-section_text {
+        width: 100%;
+        background-color:  var(--lightBlueVeryTransparent);
+    }
+    #profile-picture {
+        margin: 0 auto;
+        height: 50px;
+        width: 50px;
+    }
+    #welcome-section_heading {
+        font-size: 0.85rem;
+        margin: 8px auto 5px auto;
+    }
+    #welcome-section_sub-heading {
+        font-size: 0.8rem;
+        margin: 4px auto 10px auto;
+    }
+    #welcome-section_description {
+        font-size: 0.7rem;
+        margin: 4px auto;
     }
     .triangle {
         height: 3px;
         width: 3px;
     }
-}
-@media (max-width: 300px) {
-    #welcome-section_heading {
-        font-size: 1rem;
-    }
-    #welcome-section_sub-heading {
-        font-size: 0.7rem;
+    .arrow-double-link {
+        width: 68px;
+        height: 14px;
     }
 }
 
