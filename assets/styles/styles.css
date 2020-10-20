@@ -118,7 +118,7 @@ body {
     position: absolute;
     text-align: center;
     right: 0;
-    top: 55%;
+    top: 50%;
     transform: translateY(-50%);
     background-color: var(--lightBlueTransparent);
     border: 1px solid var(--mainBlueOpaque);
@@ -126,8 +126,8 @@ body {
     padding: 30px;
     box-sizing: border-box;
     margin-right: 150px;
-    height: 400px;
-    width: 426px;
+    height: 500px;
+    width: 500px;
     z-index: 3;
     font-weight: 200;
     overflow: hidden;
@@ -140,15 +140,19 @@ body {
 }
 #welcome-section_heading {
     font-size: 1.4rem;
-    font-weight: 200;
-    // text-shadow: 0 0 5px #fff;
+    font-weight: 400;
 }
 #welcome-section_sub-heading {
     font-size: 1rem;
-    font-weight: 200;
-    // text-shadow: 0 0 2px #fff;
+    font-weight: 300;
 }
-
+#welcome-section_description {
+    font-size: 1rem;
+    font-weight: 100;
+}
+.text--bold {
+    font-weight: 600;
+}
 .triangle {
     background-color: #fff;
     height: 5px;
@@ -168,19 +172,19 @@ body {
     left: 50%;
     transform: translateX(-50%);
     height: 40px;
-    animation: arrow-animation 1s ease-in-out infinite;
+    animation: arrow-animation 0.5s ease-in-out infinite;
     z-index: 10;
 }
 @keyframes arrow-animation {
     0% {bottom: 20px;}
-    50% {bottom: 30px;}
+    50% {bottom: 23px;}
     100% {bottom: 20px;}
 }
 .arrow-button {
     height: 100%;
     width: 100%;
 }
-/***** media queries welcome section */
+/***** media queries welcome section ********/
 @media (max-width: 768px) {
     #welcome-section_heading {
         font-size: 1.5rem;
@@ -204,7 +208,7 @@ body {
         position: static;
         margin: auto;
         transform: none;
-        height: 45%;
+        height: auto;
         width: 80%;
         z-index: 10 !important;
     }
@@ -212,14 +216,20 @@ body {
         margin: 0 auto;
     }
     #welcome-section_heading {
-        font-size: 1rem;
+        font-size: .9rem;
+        margin: 8px auto 15px auto;
     }
     #welcome-section_sub-heading {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
+        margin: 4px auto 15px auto;
+    }
+    #welcome-section_description {
+        font-size: .7rem;
+        margin: 4px auto;
     }
     .arrow-double-link {
         width: 100px;
-        height: 50px;
+        height: 100px;
     }
     #earth {
         height: 700px;
