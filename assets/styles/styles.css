@@ -1,6 +1,6 @@
 :root {
     --lightBlueTransparent: rgba(0, 43, 120, 0.6);
-    --mainBlueOpaque: rgba(0, 43, 120, 1);
+    --mainBlueOpaque: rgb(42, 106, 226);
 }
 
 html {
@@ -122,36 +122,42 @@ body {
     transform: translateY(-50%);
     background-color: var(--lightBlueTransparent);
     border: 1px solid var(--mainBlueOpaque);
+    box-shadow: 0 0 10px #fff;
     border-radius: 5px;
     padding: 30px;
     box-sizing: border-box;
     margin-right: 150px;
     height: 500px;
-    width: 500px;
+    width: 450px;
     z-index: 3;
     font-weight: 200;
     overflow: hidden;
 }
 #profile-picture {
-    height: 75px;
-    width: 75px;
+    height: 100px;
+    width: 100px;
     border-radius: 50%;
     border: 1px solid var(--mainBlueOpaque);
 }
 #welcome-section_heading {
     font-size: 1.4rem;
     font-weight: 400;
+    margin: 20px auto 30px auto;
+    font-family: 'exo 2', sans-serif;
 }
 #welcome-section_sub-heading {
-    font-size: 1rem;
+    font-family: 'exo 2', sans-serif;
+    font-size: 1.2rem;
+    width: 90%;
     font-weight: 300;
+    margin: 20px auto 30px auto;
 }
 #welcome-section_description {
     font-size: 1rem;
     font-weight: 100;
 }
 .text--bold {
-    font-weight: 600;
+    font-weight: 400;
 }
 .triangle {
     background-color: #fff;
