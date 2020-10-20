@@ -1,3 +1,8 @@
+:root {
+    --lightBlueTransparent: rgba(0, 43, 120, 0.6);
+    --mainBlueOpaque: rgba(0, 43, 120, 1);
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -15,7 +20,7 @@ body {
     display: flex;
     z-index: 4;
     height: 60px;
-    background-color: rgba(0, 43, 120, 0.6);
+    background-color: var(--lightBlueTransparent);
 }
 .nav-list {
     display: flex;
@@ -65,7 +70,7 @@ body {
 /***************** Navigation Bar End ************/
 /*************** Welcome Section Start *************/
 #welcome-section {
-    background-color: #000;
+    background-color: rgb(8, 8, 8);
     color: #fff;
     position: relative;
     height: 100vh;
@@ -100,7 +105,7 @@ body {
     top: 37%;
     left: 33%;
     transform-origin: 50% 50%;
-    animation: float-in-space 5s linear infinite;
+    animation: float-in-space 10s linear infinite;
 }
 @keyframes float-in-space {
     0% {transform: translateX(0px) translateY(0px) rotate(0deg);}
@@ -110,25 +115,38 @@ body {
     100% {transform: translateX(0x) translateY(0px) rotate(0deg);}
 }
 .welcome-section_text {
-position: absolute;
-width: 80%;
-top: 50%;
-left: 50%;
-transform: translateX(-50%) translateY(-50%);
-text-align: center;
-z-index: 3;
-font-weight: 200;
-}
-
-#welcome-section_heading {
-    font-size: 2.5rem;
+    position: absolute;
+    text-align: center;
+    right: 0;
+    top: 55%;
+    transform: translateY(-50%);
+    background-color: var(--lightBlueTransparent);
+    border: 1px solid var(--mainBlueOpaque);
+    border-radius: 5px;
+    padding: 30px;
+    box-sizing: border-box;
+    margin-right: 150px;
+    height: 400px;
+    width: 426px;
+    z-index: 3;
     font-weight: 200;
-    text-shadow: 0 0 5px #fff;
+    overflow: hidden;
+}
+#profile-picture {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    border: 1px solid var(--mainBlueOpaque);
+}
+#welcome-section_heading {
+    font-size: 1.4rem;
+    font-weight: 200;
+    // text-shadow: 0 0 5px #fff;
 }
 #welcome-section_sub-heading {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 200;
-    text-shadow: 0 0 2px #fff;
+    // text-shadow: 0 0 2px #fff;
 }
 @media (max-width: 400px) {
     #welcome-section_heading {
