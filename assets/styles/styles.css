@@ -152,6 +152,25 @@ body {
 #welcome-section_description {
     font-size: 1rem;
     font-weight: 100;
+    border-top: 1px solid #fff;
+}
+.languages {
+    display: flex;
+    justify-content: center;
+}
+.language {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50px;
+    margin: 0 10px;
+}
+.language_logo {
+    height: 50px;
+    width: 50px;
+    margin: auto;
+}
+.language_text {
+    margin: 10px 0;
 }
 .text--bold {
     font-weight: 400;
@@ -379,10 +398,13 @@ body {
 }
 .project-grid {
     display: grid;
+    display: -ms-grid;
     width: 50%;
     grid-template-columns: 200px 200px;
+    -ms-grid-columns: 200px 200px;
     justify-content: center;
     grid-template-rows: 200px 200px;
+    -ms-grid-rows: 200px 200px;
     gap: 20px 20px;
     margin: auto;
     justify-items: stretch;
