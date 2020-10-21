@@ -1,6 +1,7 @@
 let welcomeSection = document.getElementById("welcome-section");
 let navlinks = document.querySelectorAll(".nav-link");
 let projectTile = document.querySelectorAll(".project-tile");
+let projectSection = document.getElementById("projects");
 let navigationBar = document.getElementById("navbar");
 
 function numGenerator (maxNum) {
@@ -34,7 +35,9 @@ function insertTriangles() {
     for (i = 0; i < 11; i++) {        
         navigationBar.insertAdjacentHTML('beforeend', `<div class="triangle triangle-${i}" style="position: absolute; top: ${numGenerator(90)}%; left: ${numGenerator(90)}%; transform: rotate(${numGenerator(361)}deg)"></div>`);
     }
-    
+    for (i = 0; i < 11; i++) {        
+        projectSection.insertAdjacentHTML('beforeend', `<div class="triangle triangle-${i}" style="position: absolute; top: ${numGenerator(90)}%; left: ${numGenerator(90)}%; transform: rotate(${numGenerator(361)}deg)"></div>`);
+    }
 }
 
 function changeTriangleColor() {

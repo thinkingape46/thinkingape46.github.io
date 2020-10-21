@@ -11,7 +11,7 @@ html {
 body {
     font-family: 'Amatic SC','roboto', sans-serif;
     margin: 0;
-    background: linear-gradient(45deg, #fff, #000);
+    background-color: rgb(8, 8, 8);
 }
 
 /***************** Navigation Bar Start ************/
@@ -73,7 +73,6 @@ body {
     position: relative;
     height: 100vh;
     width: 100vw;
-    border-bottom: 10px solid #000;
     box-sizing: border-box;
     margin: 0;
     overflow: hidden;
@@ -396,93 +395,68 @@ body {
 /*************** Welcome Section Start *************/
 
 /********** Project Section start ************/
+
 #projects {
-    padding: 40px 0px;
-    box-sizing: border-box;
-    margin: auto;
-}
-.projects_text {
-    font-family: 'Amatic SC','roboto', sans-serif;
-    text-align: center;
-    font-size: 1.5rem;
-    padding: 10px;
-    color: #000;
-}
-.project-grid {
-    display: grid;
-    display: -ms-grid;
-    width: 50%;
-    grid-template-columns: 300px 300px;
-    -ms-grid-columns: 300px 300px;
-    justify-content: center;
-    grid-template-rows: 300px;
-    -ms-grid-rows: 300px;
-    gap: 40px;
-    margin: auto;
-    justify-items: stretch;
-}
-.project-tile {
+    font-family: 'roboto', sans-serif;
     position: relative;
-    overflow: hidden;
-    box-shadow: 0 0 10px rgb(197, 196, 196);
-}
-.project-link {
-    display: block;
-    overflow: hidden;
-    height: 100%;
-    width: 100%;
-}
-.project-image {    
-    height: 100%;
-    width: 100%;
-    transition: all 0.2s ease-out;
-}
-.project-image:hover {
-    transform: scale(1.05);
-}
-.project-title {
-    position: absolute;
-    display: block;
-    width: 100%;
-    margin: 0;
-    height: 40px;
-    line-height: 40px;
-    bottom: -100%;
     color: #fff;
-    background-color: #000;
+    padding-top: 60px;
+}
+#projects__text {
+    font-family: 'Amatic SC','roboto', sans-serif;
+    font-size: 2.5rem;
+    width: 50vw;
     text-align: center;
-    transition: all 0.2s ease-out;
+    margin: 10px auto;
+    padding: 10px;
+    box-sizing: border-box;
 }
-.project-title--show {
-    bottom: 0%;
+.project {
+    width: 60vw;
+    margin: 20px auto;
+    padding: 10px;
+    box-sizing: border-box;
 }
-/* Media queries */
-@media (max-width: 768px) {
-    .project-grid {
-        grid-template-columns: 150px 150px;
-        grid-template-rows: 150px;
-    }
-    .projects_text {
-        font-size: 1.1rem;
-    }
+.project__element {
+    margin: 10px;
 }
-@media (max-width: 425px) {
-    .project-grid {
-        grid-template-columns: 100px 100px;
-        grid-template-rows: 100px;
-        gap: 20px;
-    }
-    .projects_text {
-        font-size: 1.1rem;
-    }
-    #projects {
-        height: 80vh;
-    }
-    #footer {
-        height: 20vh;
-    }
+.project__head {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.project__title {
+    font-size: 1.1rem;
+    margin: auto 5px;
+}
+.project__icon {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+.project__description {
+    font-size: 1rem;
+}
+.project__technology {
+    display: flex;
+    justify-content: center;
+}
+.technology__member {
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+}
+.gotreks {
+    background: linear-gradient(45deg, rgba(0, 148, 67, 1), rgba(0, 96, 148, 1));
 }
 
+/************ Project section media queries *********/
+@media (max-width: 425px) {
+    .project {
+        width: 85vw;
+    }
+}
 /************ Project Section end ************/
 
 /* Footer social start */
