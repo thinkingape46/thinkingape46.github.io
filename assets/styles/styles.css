@@ -1,7 +1,7 @@
 :root {
     --lightBlueTransparent: rgba(0, 43, 120, 0.7);    
     --lightBlueVeryTransparent: rgba(0, 43, 120, 0.5);
-    --mainBlueOpaque: rgb(42, 106, 226);
+    --mainBlueOpaque: rgb(0, 43, 120, 1);
 }
 
 html {
@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    font-family: 'roboto', sans-serif;
+    font-family: 'Amatic SC','roboto', sans-serif;
     margin: 0;
     background: linear-gradient(45deg, #fff, #000);
 }
@@ -20,12 +20,12 @@ body {
     width: 100vw;
     display: flex;
     z-index: 11;
-    height: 60px;
-    background-color: var(--lightBlueTransparent);
+    height: max-content;
+    background-color: var(--mainBlueOpaque);
 }
 .nav-list {
     display: flex;
-    width: 90%;
+    width: 80%;
     margin: auto;
     padding: 0;
     justify-content: flex-end;
@@ -34,7 +34,7 @@ body {
     list-style: none;
     display: inline-block;
     padding: 15px 30px;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 300;
 }
 .nav-link {
@@ -83,15 +83,15 @@ body {
     z-index: 1;
 }
 #earth {
-    height: 450px;
-    width: 450px;
+    height: 300px;
+    width: 300px;
     background-color: #001740;
     border-radius: 50%;
     overflow: hidden;
     position: absolute;
     top: 54%;
     transform: translateY(-50%);
-    left: 7%;
+    left: 5%;
     box-shadow: 0 0 30px #b8d2ff;
     z-index: 3;
 }
@@ -103,9 +103,9 @@ body {
 #astronaut {
     position: absolute;
     z-index: 4;
-    height: 200px;
-    top: 37%;
-    left: 33%;
+    height: 120px;
+    top: 42%;
+    left: 23%;
     transform-origin: 50% 50%;
     animation: float-in-space 10s linear infinite;
 }
@@ -117,11 +117,12 @@ body {
     100% {transform: translateX(0x) translateY(0px) rotate(0deg);}
 }
 .welcome-section_text {
+    font-family: 'Amatic SC','roboto', sans-serif;
     position: absolute;
     text-align: center;
-    right: 10%;
-    top: 54%;
-    transform: translateY(-50%);
+    left: 59%;
+    top: 45%;
+    transform: translateX(-50%) translateY(-50%);
     border-radius: 5px;
     padding: 30px;
     box-sizing: border-box;
@@ -137,20 +138,19 @@ body {
     border: 1px solid var(--mainBlueOpaque);
 }
 #welcome-section_heading {
-    font-size: 1.4rem;
+    font-size: 3rem;
     font-weight: 400;
     margin: 20px auto 30px auto;
-    font-family: 'exo 2', sans-serif;
+    width: max-content;
 }
 #welcome-section_sub-heading {
-    font-family: 'exo 2', sans-serif;
-    font-size: 1.2rem;
-    width: 90%;
+    font-size: 2rem;
+    width: max-content;
     font-weight: 300;
     margin: 20px auto 30px auto;
 }
 #welcome-section_description {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 100;
     border-top: 1px solid #fff;
 }
@@ -177,9 +177,10 @@ body {
 }
 .triangle {
     background-color: #fff;
-    height: 5px;
-    width: 5px;
+    height: 3px;
+    width: 3px;
     border-radius: 50%;
+    transition: all 50s linear;
     animation: star-glow 1s ease-in-out infinite;
 }
 @keyframes star-glow {
@@ -269,9 +270,6 @@ body {
         height: auto;
         padding: 30px 10px;
         width: 80%;
-        background-color: var(--lightBlueTransparent);
-        border: 1px solid var(--mainBlueOpaque);
-        box-shadow: 0 0 10px #fff;
     }
     #profile-picture {
         margin: 0 auto;
@@ -387,10 +385,9 @@ body {
     padding: 40px 0px;
     box-sizing: border-box;
     margin: auto;
-    height: 80vh;
 }
 .projects_text {
-    font-family: 'exo 2', sans-serif;
+    font-family: 'Amatic SC','roboto', sans-serif;
     text-align: center;
     font-size: 1.5rem;
     padding: 10px;
@@ -400,12 +397,12 @@ body {
     display: grid;
     display: -ms-grid;
     width: 50%;
-    grid-template-columns: 200px 200px;
-    -ms-grid-columns: 200px 200px;
+    grid-template-columns: 300px 300px;
+    -ms-grid-columns: 300px 300px;
     justify-content: center;
-    grid-template-rows: 200px 200px;
-    -ms-grid-rows: 200px 200px;
-    gap: 20px 20px;
+    grid-template-rows: 300px;
+    -ms-grid-rows: 300px;
+    gap: 40px;
     margin: auto;
     justify-items: stretch;
 }
@@ -448,25 +445,26 @@ body {
 @media (max-width: 768px) {
     .project-grid {
         grid-template-columns: 150px 150px;
-        grid-template-rows: 150px 150px;
+        grid-template-rows: 150px;
     }
     .projects_text {
         font-size: 1.1rem;
     }
 }
-@media (max-width: 300px) {
+@media (max-width: 425px) {
     .project-grid {
         grid-template-columns: 100px 100px;
-        grid-template-rows: 100px 100px;
+        grid-template-rows: 100px;
+        gap: 20px;
     }
     .projects_text {
         font-size: 1.1rem;
     }
     #projects {
-        height: auto;
+        height: 80vh;
     }
     #footer {
-        height: auto;
+        height: 20vh;
     }
 }
 
@@ -474,7 +472,7 @@ body {
 
 /* Footer social start */
 #footer {
-    font-family: 'exo 2', sans-serif;
+    font-family: 'Amatic SC','roboto', sans-serif;
     background-color:#000;
     display: flex;
     flex-direction: column;

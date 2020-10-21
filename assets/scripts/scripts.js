@@ -1,7 +1,7 @@
 let welcomeSection = document.getElementById("welcome-section");
 let navlinks = document.querySelectorAll(".nav-link");
 let projectTile = document.querySelectorAll(".project-tile");
-let navigationBar = document.getElementById("navbar")
+let navigationBar = document.getElementById("navbar");
 
 function numGenerator (maxNum) {
     let randomNumber = Math.floor(Math.random() * (maxNum + 1));
@@ -26,30 +26,33 @@ function insertTriangles() {
         var triangles = 30;
     }
     else {
-        var triangles = 70;
+        var triangles = 50;
     }
-
     for (i = 0; i < triangles; i++) {
         welcomeSection.insertAdjacentHTML('beforeend', `<div class="triangle triangle-${i}" style="position: absolute; top: ${numGenerator(90)}%; left: ${numGenerator(90)}%; transform: rotate(${numGenerator(361)}deg)"></div>`);
     }
     for (i = 0; i < 11; i++) {        
         navigationBar.insertAdjacentHTML('beforeend', `<div class="triangle triangle-${i}" style="position: absolute; top: ${numGenerator(90)}%; left: ${numGenerator(90)}%; transform: rotate(${numGenerator(361)}deg)"></div>`);
     }
+    
 }
+
+function changeTriangleColor() {
+    let i;
+    let triangles = document.getElementsByClassName("triangle").length;
+    for (i = 0; i < triangles; i++) {
+        /*
+        document.getElementsByClassName("triangle")[i].style.fill = randomColorGenerator();
+        document.getElementsByClassName("triangle")[i].style.transform = `rotate(${numGenerator(361)}deg)`;
+        */
+        document.getElementsByClassName("triangle")[i].style.left = `${numGenerator(95)}%`
+        document.getElementsByClassName("triangle")[i].style.top = `${numGenerator(95)}%`
+    }
+}
+
 insertTriangles();
-
-// function changeTriangleColor() {
-//     let i;
-//     let triangles = document.getElementsByClassName("triangle").length;
-//     for (i = 0; i < triangles; i++) {
-//         document.getElementsByClassName("triangle")[i].style.fill = randomColorGenerator();
-//         document.getElementsByClassName("triangle")[i].style.transform = `rotate(${numGenerator(361)}deg)`;
-//         document.getElementsByClassName("triangle")[i].style.left = `${numGenerator(95)}%`
-//         document.getElementsByClassName("triangle")[i].style.top = `${numGenerator(95)}%`
-//     }
-// }
-
-// setInterval(changeTriangleColor, 2000);
+setTimeout(changeTriangleColor, 10);
+setInterval(changeTriangleColor, 50000);
 
 // Display the name of the project //
 projectTile.forEach(e => {
