@@ -47,7 +47,7 @@ body {
         justify-content: center;
     }
     .nav-list_item {
-        font-size: 1rem;
+        font-size: 1.25rem;
         padding: 15px;
     }
 }
@@ -55,17 +55,14 @@ body {
     #navbar {
         height: 50px;
     }
-    .nav-list {
-        margin: auto 12px;
-    }
     .nav-list_item {
         padding: 0 10px;
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 }
 @media (max-width: 300px) {
     .nav-list_item {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 }
 /***************** Navigation Bar End ************/
@@ -131,16 +128,25 @@ body {
     font-weight: 200;
     overflow: hidden;
 }
+#about-me {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #fff;
+}
+#about-me_text {
+    margin-right: 50px;
+}
 #profile-picture {
-    height: 100px;
-    width: 100px;
+    height: 125px;
+    width: 125px;
+    margin: auto;
     border-radius: 50%;
     border: 1px solid var(--mainBlueOpaque);
 }
 #welcome-section_heading {
     font-size: 3rem;
-    font-weight: 400;
-    margin: 20px auto 30px auto;
+    font-weight: 100;
+    margin: 20px auto;
     width: max-content;
 }
 #welcome-section_sub-heading {
@@ -152,11 +158,11 @@ body {
 #welcome-section_description {
     font-size: 1.2rem;
     font-weight: 100;
-    border-top: 1px solid #fff;
 }
 .languages {
     display: flex;
     justify-content: center;
+    z-index: 5;
 }
 .language {
     display: flex;
@@ -175,6 +181,18 @@ body {
 .text--bold {
     font-weight: 400;
 }
+.background-bar-one {
+    position: absolute;
+    bottom: -20%;
+    right: -99px;
+    transform: rotate(-45deg);
+    width: 314px;
+    height: 128px;
+    background-color: rgba(46, 46, 46, 0.5);
+}
+.background-bar-two {
+    display: none;
+}
 .triangle {
     background-color: #fff;
     height: 3px;
@@ -191,17 +209,17 @@ body {
 }
 .arrow-double-link {
     position: absolute;
-    bottom: 15px;
+    bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
     height: 40px;
-    animation: arrow-animation 1s ease-in-out infinite;
+    animation: arrow-animation 0.3s ease-in-out infinite;
     z-index: 10;
 }
 @keyframes arrow-animation {
-    0% {bottom: 5px;}
-    50% {bottom: 15px;}
-    100% {bottom: 5px;}
+    0% {bottom: 25px;}
+    50% {bottom: 23px;}
+    100% {bottom: 25px;}
 }
 .arrow-button {
     height: 100%;
@@ -215,29 +233,27 @@ body {
         width: 400px;
     }
     .welcome-section_text {
-        right: 8%;
-        width: 35%;
+        left: 67%;
+        top: 45%;
     }
     #welcome-section_heading {
-        font-size: 1.5rem;
+        font-size: 2.7rem;
     }
     #welcome-section_sub-heading {
-        font-size: 1.1rem;
+        font-size: 2.1rem;
     }
 }
 @media (max-width: 1024px) {
     #earth {
-        height: 300px;
-        width: 300px;
+        height: 250px;
+        width: 250px;
         left: 5%;
     }
     #astronaut {
-        height: 144px;
+        height: 100px;
         top: 43%;
     }
     .welcome-section_text {
-        right: 4%;
-        width: 40%;
         padding: 30px 10px;
     }
     #profile-picture {
@@ -245,13 +261,13 @@ body {
         width: 80px;
     }
     #welcome-section_heading {
-        font-size: 1.2rem;
+        font-size: 2rem;
     }
     #welcome-section_sub-heading {
-        font-size: 1.1rem;
+        font-size: 1.6rem;
     }
     #welcome-section_description {
-        font-size: 0.9rem;
+        font-size: 1.1rem;
     }
     .arrow-double-link {
         height: 30px;
@@ -295,16 +311,16 @@ body {
     }
     #earth {
         display: block;
-        height: 700px;
-        width: 700px;
+        height: 450px;
+        width: 450px;
         top: 1%;
         left: 0%;
         transform: translateX(-50%) translateY(-50%);
     }
     #astronaut {
-        height: 150px;
-        top: 7%;
-        left: 31%;
+        height: 100px;
+        top: 9%;
+        left: 27%;
     }
     .triangle {
         height: 5px;
@@ -349,7 +365,6 @@ body {
     }
     .welcome-section_text {
         width: 100%;
-        background-color:  var(--lightBlueVeryTransparent);
     }
     #profile-picture {
         margin: 0 auto;
