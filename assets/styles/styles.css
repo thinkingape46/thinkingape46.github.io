@@ -322,8 +322,8 @@ body {
         left: 27%;
     }
     .triangle {
-        height: 5px;
-        width: 5px;
+        height: 2px;
+        width: 2px;
     }
 }
 @media (max-width: 650px) {
@@ -381,10 +381,6 @@ body {
     #welcome-section_description {
         font-size: 0.7rem;
         margin: 4px auto;
-    }
-    .triangle {
-        height: 3px;
-        width: 3px;
     }
     .arrow-double-link {
         width: 68px;
