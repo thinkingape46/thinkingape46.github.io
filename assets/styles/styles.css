@@ -412,10 +412,11 @@ body {
     box-sizing: border-box;
 }
 .project {
-    width: 60vw;
+    width: 55vw;
     margin: 20px auto;
-    padding: 10px;
+    padding: 20px;
     box-sizing: border-box;
+    border-radius: 5px;
 }
 .project__element {
     margin: 10px;
@@ -432,29 +433,42 @@ body {
 .project__icon {
     height: 40px;
     width: 40px;
-    border-radius: 50%;
+    border-radius: 25%;
     margin: 0 5px;
 }
 .project__description {
     font-size: 1rem;
+    margin: 40px;
 }
 .project__technology {
     display: flex;
     justify-content: center;
 }
 .technology__member {
+    display: inline-block;
     height: 40px;
     width: 40px;
-    margin: 5px;
+    margin: 10px;
+}
+.technology__image {
+    height: 100%;
+    width: 100%;
 }
 .gotreks {
     background: linear-gradient(45deg, rgba(0, 148, 67, 1), rgba(0, 96, 148, 1));
+}
+.trip-visualizer {
+    background: linear-gradient(45deg, rgba(0, 56, 71, 1), rgba(112, 84, 62, 1));
 }
 
 /************ Project section media queries *********/
 @media (max-width: 425px) {
     .project {
         width: 85vw;
+        padding: 10px;
+    }
+    .project__description {
+        margin: 20px;
     }
 }
 /************ Project Section end ************/
