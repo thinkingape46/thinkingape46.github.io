@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" lang="en">
+    <meta name="author" content="Jagadeesh Kumar">
+    <meta name="description" content="My name is Jagadeesh Kumar, web-developer and artist. I design and create user interfaces, also like to experiment with programming in general through creating applications. My other hobbies are science, art, cycling, running etc.">
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
@@ -24,24 +26,25 @@
             <div id="about-me">
                 <div id="about-me_text">
                     <p id="welcome-section_heading">My name is <span id="name">Jagadeesh Kumar</span></p>
-                    <p id="welcome-section_sub-heading">Front-end developer and artist</p>     
+                    <p id="welcome-section_sub-heading">Front-end developer and artist</p>
+                    <p id="welcome-section__bio">I design and build user interfaces, and experiment with programming through javascript. I am also a artist who can create raster and vector images, and CSS animations.</p> 
                 </div>            
-                <img src="assets/images/profile-picture.jpg" id="profile-picture" alt="my profile picture">
+                <img src="assets/images/profile-picture.jpg" draggable="false" id="profile-picture" alt="my profile picture">
             </div>
 
             <div id="welcome-section_description">
-                <p class="skills">Languages</p>
+                <p class="skills">Core Skills</p>
                 <div class="languages">
                     <div class="html language">
-                        <img class="html language_logo" src="assets/images/html5.svg" alt="logo of html">
+                        <img  draggable="false" class="html language_logo" src="assets/images/html5.svg" alt="logo of html">
                         <p class="language_text">HTML</p>
                     </div>
                     <div class="language">
-                        <img class="css language_logo" src="assets/images/css3.svg" alt="logo of css">
+                        <img draggable="false" class="css language_logo" src="assets/images/css3.svg" alt="logo of css">
                         <p class="language_text">CSS</p>
                     </div>
                     <div class="language">
-                        <img class="css language_logo" src="assets/images/javascript.svg" alt="logo of javascript">
+                        <img draggable="false" class="css language_logo" src="assets/images/javascript.svg" alt="logo of javascript">
                         <p class="language_text">JavaScript</p>
                     </div>
                 </div>
@@ -50,10 +53,10 @@
             <div class="background-bar-two"></div>
 		</div>
 		<div id="earth">			
-			<img src="assets/images/earth.svg" id="map" alt="svg drawing of earth at night">
+			<img draggable="false" src="assets/images/earth.svg" id="map" alt="svg drawing of earth at night">
 		</div>
-		<img src="assets/images/astronaut.svg" id="astronaut" alt="svg drawing of an astronaut">
-        <a href="#projects" class="arrow-double-link"><img src="assets/images/arrow-double.svg" alt="" class="arrow-button"></a>        
+		<img draggable="false" src="assets/images/astronaut.svg" id="astronaut" alt="svg drawing of an astronaut">
+        <a href="#projects" class="arrow-double-link"><img draggable="false" src="assets/images/arrow-double.svg" alt="" class="arrow-button"></a>        
     </section>
 
     <section id="projects">
@@ -61,9 +64,12 @@
         <section class="project gotreks">
             <div class="project__element project__head">
                 <div class="project__title">Go Treks</div>
-                <img src="assets/images/gotreks.svg" class="project__icon" alt="project icon">
+                <a class="project__link" target="_blank" href="https://thinkingape46.github.io/go-treks/"><img src="assets/images/gotreks.svg" class="project__icon" alt="project icon"></a>
             </div>
-            <div class="project__element project__description">This is travel website for a fictional company called Go Treks with HTML, CSS, and JavaScript. The website is responsive for all the screens from mobile to desktop. Logo and all the images are created by me and animated so that the website shall look more lively.</div>
+            <p class="project__element project__description">Go Treks is a fictional travel website which offers trips to places around Bangalore. It has a simple design, yet packed with all the information and sections a visitor expects from a travel website.
+            </p>
+            <p class="project__element project__description">I have designed and created this site to showcase my ability to make a create a responsive website, vector images (SVG), animations (CSS) sprinkled with JavaScript. All the images, logos and animations are created by me.
+            </p>
             <div class="project__element project__technology">
                 <a class="technology__member" target="_blank" href="https://en.wikipedia.org/wiki/HTML"><img class="technology__image" src="assets/images/html5.svg" alt="image of technology used for project"></a>
                 <a class="technology__member" target="_blank" href="https://en.wikipedia.org/wiki/CSS"><img class="technology__image" src="assets/images/css3.svg" alt="image of technology used for project"></a>
@@ -73,10 +79,15 @@
 
         <section class="project trip-visualizer">
             <div class="project__element project__head">
-                <div class="project__title">Trip Visualizer</div>
-                <img src="assets/images/trip-visualizer.svg" class="project__icon" alt="project icon">
+                <div class="project__title">GPX Chemin</div>
+                <a href="https://gpx-chemin.herokuapp.com/" target="_blank" class="project_link"><img src="assets/images/trip-visualizer.svg" class="project__icon" alt="project icon"></a>
             </div>
-            <div class="project__element project__description">Trip Visualizer is a simple web-app to visualize your GPX files on a map using Leaflet library. The files can be loaded from the local drive, there is no limit to no of files that can be loaded. As on 22 Oct 2020, the app only accepts files from local disc; as an update, I will add a stats section with several visualizations and also able to load files from 3rd party APIs such as Strava and Decathlon.</div>
+            <p class="project__element project__description">GPX Chemin is a simple web-app to visualize GPX files of sport activities. Leaflet library is used to render the map and Canvas for graph visualization. The files can be loaded from the local drive.</p>
+
+            <p class="project__element project__description">This app is functional and meaningful, it does not just render the gpx track, also display the graphs and tables for speed, elevation, heart rate etc. My plan for the future is to make the app pull activities through 3rd party APIs such as Strava and Decathlon.</p>
+
+            <p class="project__element project__description">This project hopefully showcase my ability to work with JavaScript, XML, Canvas, SVG and basic Express.js (backend).</p>
+
             <div class="project__element project__technology">
                 <a class="technology__member" target="_blank" href="https://en.wikipedia.org/wiki/HTML"><img class="technology__image" src="assets/images/html5.svg" alt="image of technology used for project"></a>
                 <a class="technology__member" target="_blank" href="https://en.wikipedia.org/wiki/CSS"><img class="technology__image" src="assets/images/css3.svg" alt="image of technology used for project"></a>

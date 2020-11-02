@@ -154,6 +154,11 @@ body {
     font-weight: 300;
     margin: 20px auto 30px auto;
 }
+#welcome-section__bio {
+    font-family: 'roboto', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 100;
+}
 #welcome-section_description {
     font-size: 1.2rem;
     font-weight: 100;
@@ -268,6 +273,9 @@ body {
     #welcome-section_description {
         font-size: 1.1rem;
     }
+    #welcome-section__bio {
+        font-size: 0.9rem;
+    }
     .arrow-double-link {
         height: 30px;
     }
@@ -304,6 +312,9 @@ body {
         font-size: 1rem;
         margin: 10px auto;
     }
+    #welcome-section__bio {
+        font-size: 0.9rem;
+    }
     .arrow-double-link {
         width: 100px;
         height: 100px;
@@ -330,10 +341,17 @@ body {
     .arrow-double-link {
         height: 60px;
     }
+    #welcome-section__bio {
+        font-size: 0.8rem;
+    }
 }
 @media (max-width: 425px) {
+    #about-me_text {
+        margin-right: 13px;
+    }
     .welcome-section_text {
-    width: 85%;
+        width: 85%;
+        margin-top: 133px;
     }
     #welcome-section_heading {
         font-size: 1.2rem;
@@ -347,12 +365,12 @@ body {
         font-size: 0.9rem;
         margin: 4px auto;
     }
+    #welcome-section__bio {
+        font-size: 0.8rem;
+    }
     .arrow-double-link {
         width: 100px;
         height: 100px;
-    }
-    #earth {
-        display: none;
     }
     #astronaut {
         height: 100px;
@@ -434,7 +452,7 @@ body {
 }
 .project__description {
     font-size: 1rem;
-    margin: 40px;
+    margin: 10px;
 }
 .project__technology {
     display: flex;
@@ -464,7 +482,7 @@ body {
         padding: 10px;
     }
     .project__description {
-        margin: 20px;
+        font-size: .9rem;
     }
 }
 /************ Project Section end ************/
