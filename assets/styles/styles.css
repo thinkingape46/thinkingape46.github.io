@@ -14,6 +14,18 @@ body {
     background-color: rgb(8, 8, 8);
 }
 
+/* Scroll bar styling using -webkit-scrollbar works only for Blink and Webkit browsers 
+https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-scrollbar - 04 Nov 2020
+*/
+body::-webkit-scrollbar {
+    width: 8px;
+    background-color:#fff;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--mainBlueOpaque);
+}
+
 /***************** Navigation Bar Start ************/
 #navbar {
     position: fixed;
