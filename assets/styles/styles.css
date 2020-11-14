@@ -1,4 +1,5 @@
 :root {
+    --darkBlueOpaque: rgb(0, 23, 66);
     --lightBlueTransparent: rgba(0, 43, 120, 0.7);    
     --lightBlueVeryTransparent: rgba(0, 43, 120, 0.5);
     --mainBlueOpaque: rgb(0, 43, 120, 1);
@@ -84,7 +85,7 @@ body::-webkit-scrollbar-thumb {
     color: #fff;
     position: relative;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     box-sizing: border-box;
     margin: 0;
     overflow: hidden;
@@ -486,6 +487,9 @@ body::-webkit-scrollbar-thumb {
 .trip-visualizer {
     background: linear-gradient(45deg, rgba(0, 56, 71, 1), rgba(112, 84, 62, 1));
 }
+.marie-curie {
+    background: linear-gradient(45deg, rgba(25, 51, 35, 1), rgba(79, 97, 86, 1)); 
+}
 
 /************ Project section media queries *********/
 @media (max-width: 425px) {
@@ -502,11 +506,11 @@ body::-webkit-scrollbar-thumb {
 /* Footer social start */
 #footer {
     font-family: 'Amatic SC','roboto', sans-serif;
-    background-color:#000;
+    background-color: var(--darkBlueOpaque);
     display: flex;
     flex-direction: column;
     color: #fff;
-    height: 20vh;
+    height: auto;
 }
 .about-us {
     margin: 10px auto;
