@@ -36,15 +36,15 @@
                 <p class="skills">Core Skills</p>
                 <div class="languages">
                     <div class="html language">
-                        <a class="technology__member" target="_blank" href="https://en.wikipedia.org/wiki/HTML"><img class="technology__image" src="assets/images/html5.svg" alt="logo of html5"></a>
+                        <a class="skill__member" target="_blank" href="https://en.wikipedia.org/wiki/HTML"><img class="skill__image" src="assets/images/html5.svg" alt="logo of html5"></a>
                         <p class="language_text">HTML</p>
                     </div>
                     <div class="language">
-                        <a class="technology__member" target="_blank" href="https://en.wikipedia.org/wiki/CSS"><img class="technology__image" src="assets/images/css3.svg" alt="logo of css"></a>
+                        <a class="skill__member" target="_blank" href="https://en.wikipedia.org/wiki/CSS"><img class="skill__image" src="assets/images/css3.svg" alt="logo of css"></a>
                         <p class="language_text">CSS</p>
                     </div>
                     <div class="language">
-                        <a class="technology__member" target="_blank" href="https://en.wikipedia.org/wiki/JavaScript"><img class="technology__image" src="assets/images/javascript.svg" alt="logo of javascript"></a>
+                        <a class="skill__member" target="_blank" href="https://en.wikipedia.org/wiki/JavaScript"><img class="skill__image" src="assets/images/javascript.svg" alt="logo of javascript"></a>
                         <p class="language_text">JavaScript</p>
                     </div>
                 </div>
@@ -62,55 +62,60 @@
     <section id="projects">
         <p id="projects__text">Projects</p>
 
-        <section class="project trip-visualizer">
-            <div class="project__element project__head">
-                <div class="project__title">GPX Chemin</div>
-                <a href="https://gpx-chemin.herokuapp.com/" target="_blank" class="project_link"><img src="assets/images/trip-visualizer.svg" class="project__icon" alt="project icon"></a>
-            </div>
-            <p class="project__element project__description">GPX Chemin is a simple web-app to visualize GPX files of sport activities. Leaflet library is used to render the map and Canvas for graph visualization. The files can be loaded from the local drive.</p>
+        <div id="projects__content">
 
-            <p class="project__element project__description">It renders the gpx track, graphs and tables for speed, elevation, heart rate etc. My plan for the future is to make the app pull activities through 3rd party APIs such as Strava and Decathlon.</p>
+            <section class="project trip-visualizer">
+                <div class="project__element project__head">
+                    <div class="project__title">GPX Chemin</div>
+                    <a href="https://gpx-chemin.herokuapp.com/" target="_blank" class="project_link"><img src="assets/images/trip-visualizer.svg" class="project__icon" alt="project icon"></a>
+                </div>
+                <p class="project__element project__description">GPX Chemin is a simple web-app to visualize GPX files of sport activities. Leaflet library is used to render the map and Canvas for graph visualization. The files can be loaded from the local drive.</p>
+    
+                <p class="project__element project__description">It renders the gpx track, graphs and tables for speed, elevation, heart rate etc. My plan for the future is to make the app pull activities through 3rd party APIs such as Strava and Decathlon.</p>
+    
+                <p class="project__element project__description">This project hopefully showcase my ability to work with JavaScript, XML, Canvas, SVG and basic Express.js (backend).</p>
+    
+                <div class="project__element project__technology">
+                    <a class="technology__member" target="_blank" href="https://en.wikipedia.org/wiki/HTML"><img class="technology__image" src="assets/images/html5.svg" alt="image of technology used for project"></a>
+                    <a class="technology__member" target="_blank" href="https://en.wikipedia.org/wiki/CSS"><img class="technology__image" src="assets/images/css3.svg" alt="image of technology used for project"></a>
+                    <a class="technology__member" target="_blank" href="https://en.wikipedia.org/wiki/JavaScript"><img class="technology__image" src="assets/images/javascript.svg" alt="image of technology used for project"></a>
+                    <a class="technology__member" target="_blank" href="https://en.wikipedia.org/wiki/Leaflet_(software)"><img class="technology__image" src="assets/images/leaflet.svg" alt="logo of leaflet library"></a>
+                </div>
+            </section>
+    
+            <section class="project gotreks">
+                <div class="project__element project__head">
+                    <div class="project__title">Go Treks</div>
+                    <a class="project__link" target="_blank" href="https://thinkingape46.github.io/go-treks/"><img src="assets/images/gotreks.svg" class="project__icon" alt="project icon"></a>
+                </div>
+                <p class="project__element project__description">Go Treks is a fictional travel website which offers trips to places around Bangalore. It has a simple design, yet packed with all the information and sections a visitor expects from a travel website.
+                </p>
+                <p class="project__element project__description">I have designed and created this site to showcase my ability to make a create a responsive website, vector images (SVG), animations (CSS) sprinkled with JavaScript. All the images, logos and animations are created by me.
+                </p>
+                <div class="project__element project__technology">
+                    <a class="technology__member" target="_blank" href="https://en.wikipedia.org/wiki/HTML"><img class="technology__image" src="assets/images/html5.svg" alt="image of technology used for project"></a>
+                    <a class="technology__member" target="_blank" href="https://en.wikipedia.org/wiki/CSS"><img class="technology__image" src="assets/images/css3.svg" alt="image of technology used for project"></a>
+                    <a class="technology__member" target="_blank" href="https://en.wikipedia.org/wiki/JavaScript"><img class="technology__image" src="assets/images/javascript.svg" alt="image of technology used for project"></a>
+                </div>
+            </section>
+    
+            <section class="project marie-curie">
+                <div class="project__element project__head">
+                    <div class="project__title">Marie Curie</div>
+                    <a href="https://thinkingape46.github.io/marie-curie/" target="_blank" class="project_link"><img src="assets/images/marie-curie.svg" class="project__icon" alt="project icon"></a>
+                </div>
+                <p class="project__element project__description">This is my simple static website I have made as a tribute for two time nobel prize winner Marie Curie.</p>
+    
+                <p class="project__element project__description">This project showcases my very basic skill of creating a meaningful site with html and css.</p>
+    
+                <div class="project__element project__technology">
+                    <a class="technology__member" target="_blank" href="https://en.wikipedia.org/wiki/HTML"><img class="technology__image" src="assets/images/html5.svg" alt="image of technology used for project"></a>
+                    <a class="technology__member" target="_blank" href="https://en.wikipedia.org/wiki/CSS"><img class="technology__image" src="assets/images/css3.svg" alt="image of technology used for project"></a>
+                </div>
+            </section>
 
-            <p class="project__element project__description">This project hopefully showcase my ability to work with JavaScript, XML, Canvas, SVG and basic Express.js (backend).</p>
-
-            <div class="project__element project__technology">
-                <a class="technology__member" target="_blank" href="https://en.wikipedia.org/wiki/HTML"><img class="technology__image" src="assets/images/html5.svg" alt="image of technology used for project"></a>
-                <a class="technology__member" target="_blank" href="https://en.wikipedia.org/wiki/CSS"><img class="technology__image" src="assets/images/css3.svg" alt="image of technology used for project"></a>
-                <a class="technology__member" target="_blank" href="https://en.wikipedia.org/wiki/JavaScript"><img class="technology__image" src="assets/images/javascript.svg" alt="image of technology used for project"></a>
-                <a class="technology__member" target="_blank" href="https://en.wikipedia.org/wiki/Leaflet_(software)"><img class="technology__image" src="assets/images/leaflet.svg" alt="logo of leaflet library"></a>
-            </div>
-        </section>
-
-        <section class="project gotreks">
-            <div class="project__element project__head">
-                <div class="project__title">Go Treks</div>
-                <a class="project__link" target="_blank" href="https://thinkingape46.github.io/go-treks/"><img src="assets/images/gotreks.svg" class="project__icon" alt="project icon"></a>
-            </div>
-            <p class="project__element project__description">Go Treks is a fictional travel website which offers trips to places around Bangalore. It has a simple design, yet packed with all the information and sections a visitor expects from a travel website.
-            </p>
-            <p class="project__element project__description">I have designed and created this site to showcase my ability to make a create a responsive website, vector images (SVG), animations (CSS) sprinkled with JavaScript. All the images, logos and animations are created by me.
-            </p>
-            <div class="project__element project__technology">
-                <a class="technology__member" target="_blank" href="https://en.wikipedia.org/wiki/HTML"><img class="technology__image" src="assets/images/html5.svg" alt="image of technology used for project"></a>
-                <a class="technology__member" target="_blank" href="https://en.wikipedia.org/wiki/CSS"><img class="technology__image" src="assets/images/css3.svg" alt="image of technology used for project"></a>
-                <a class="technology__member" target="_blank" href="https://en.wikipedia.org/wiki/JavaScript"><img class="technology__image" src="assets/images/javascript.svg" alt="image of technology used for project"></a>
-            </div>
-        </section>
-
-        <section class="project marie-curie">
-            <div class="project__element project__head">
-                <div class="project__title">Marie Curie</div>
-                <a href="https://thinkingape46.github.io/marie-curie/" target="_blank" class="project_link"><img src="assets/images/marie-curie.svg" class="project__icon" alt="project icon"></a>
-            </div>
-            <p class="project__element project__description">This is my simple static website I have made as a tribute for two time nobel prize winner Marie Curie.</p>
-
-            <p class="project__element project__description">This project showcases my very basic skill of creating a meaningful site with html and css.</p>
-
-            <div class="project__element project__technology">
-                <a class="technology__member" target="_blank" href="https://en.wikipedia.org/wiki/HTML"><img class="technology__image" src="assets/images/html5.svg" alt="image of technology used for project"></a>
-                <a class="technology__member" target="_blank" href="https://en.wikipedia.org/wiki/CSS"><img class="technology__image" src="assets/images/css3.svg" alt="image of technology used for project"></a>
-            </div>
-        </section>
+        </div>
+        
 
     </section>
 
