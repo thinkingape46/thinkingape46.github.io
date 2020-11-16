@@ -1,8 +1,12 @@
 :root {
     --darkBlueOpaque: rgb(0, 23, 66);
-    --lightBlueTransparent: rgba(0, 43, 120, 0.7);    
+    --darkBlueTransparent: rgba(0, 23, 6, 0.8);
+    --lightBlueTransparent: rgba(0, 43, 120, 0.8);    
     --lightBlueVeryTransparent: rgba(0, 43, 120, 0.5);
-    --mainBlueOpaque: rgb(0, 43, 120, 1);
+    --mainBlueOpaque: rgba(0, 43, 120, 1);
+    --mainBlueTransparent: rgba(0, 43, 120, 0.8);
+    --darkGreyTransparent: rgba(36, 36, 36, 0.8);
+    --mediumGreyTransparent: rgba(50, 50, 50, 0.8);
 }
 
 html {
@@ -14,6 +18,24 @@ body {
     margin: 0;
     background-color: rgb(8, 8, 8);
 }
+
+/* Text styling start */
+.text {
+    margin: 5px auto;
+}
+.text--narrow {
+    /* To reduce the width of text column */
+    width: 75%;
+}
+.text--center {
+    text-align: center;
+}
+.text--large {
+    /* meant for sub-heading */
+    font-size: 1.2rem;
+}
+
+/* Text styling start */
 
 /* Scroll bar styling using -webkit-scrollbar works only for Blink and Webkit browsers 
 https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-scrollbar - 04 Nov 2020
@@ -460,7 +482,7 @@ body::-webkit-scrollbar-thumb {
     border-radius: 5px;
 }
 .project__element {
-    margin: 10px;
+    margin: 10px 7%;
 }
 .project__head {
     display: flex;
@@ -481,6 +503,39 @@ body::-webkit-scrollbar-thumb {
     font-size: 1rem;
     margin: 10px;
 }
+.project__links {
+    display: flex;
+    justify-content: space-around;
+}
+.project__external {
+    display: flex;
+    justify-content: center;
+    margin: 19px 0 0 0;
+}
+.project__button {
+    display: flex;
+    margin: 0px 10px;
+    border-radius: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.project__github {
+    background: linear-gradient(45deg, var(--darkGreyTransparent), var(--mediumGreyTransparent));
+}
+.project__live-site {
+    background: linear-gradient(45deg, var(--darkBlueTransparent), var(--mainBlueTransparent));
+}
+.project__links__text {
+    color: #fff;
+    margin: auto;
+    padding: 5px;
+    box-sizing: border-box;
+    text-decoration: none;  
+}
+.project__links__text:visited {
+    text-decoration: none;
+}
 .project__technology {
     display: flex;
     justify-content: center;
@@ -490,11 +545,12 @@ body::-webkit-scrollbar-thumb {
     display: inline-block;
     height: 30px;
     width: 30px;
-    margin: 10px;
+    margin: 7px;
 }
 .technology__image {
-    height: 100%;
-    width: 100%;
+    height: 30px;
+    width: 30px;
+    margin: auto;
 }
 .gotreks {
     background: linear-gradient(45deg, rgba(0, 148, 67, 1), rgba(0, 96, 148, 1));
@@ -507,6 +563,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 /************ Project section media queries *********/
+@media (max-width: 1024px) {
+    .project__links {
+        flex-direction: column;
+    }
+}
 @media (max-width: 768px) {
     .project {
         width: 75vw;
@@ -525,6 +586,9 @@ body::-webkit-scrollbar-thumb {
         height: 20px;
         width: 20px;
         margin: 10px;
+    }
+    .project__links__text {
+        font-size: 0.7rem;
     }
 }
 /************ Project Section end ************/
@@ -555,20 +619,7 @@ body::-webkit-scrollbar-thumb {
 .social-icon {
     width: 50px;
 }
-.text {
-    margin: 5px auto;
-}
-.text--narrow {
-    /* To reduce the width of text column */
-    width: 75%;
-}
-.text--center {
-    text-align: center;
-}
-.text--large {
-    /* meant for sub-heading */
-    font-size: 1.2rem;
-}
+
 @media (max-width: 650px) {
     .social-icon--footer {
         margin: 0 5px;
