@@ -86,7 +86,7 @@ body::-webkit-scrollbar-thumb {
         justify-content: center;
     }
     .nav-list_item {
-        font-size: 1.25rem;
+        font-size: 1rem;
         padding: 15px;
     }
 }
