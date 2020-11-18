@@ -33,9 +33,6 @@ function insertTriangles() {
         welcomeSection.insertAdjacentHTML('beforeend', `<div class="triangle triangle-${i}" style="position: absolute; top: ${numGenerator(90)}%; left: ${numGenerator(90)}%; transform: rotate(${numGenerator(361)}deg)"></div>`);
     }
     for (i = 0; i < 11; i++) {        
-        navigationBar.insertAdjacentHTML('beforeend', `<div class="triangle triangle-${i}" style="position: absolute; top: ${numGenerator(90)}%; left: ${numGenerator(90)}%; transform: rotate(${numGenerator(361)}deg)"></div>`);
-    }
-    for (i = 0; i < 11; i++) {        
         projectSection.insertAdjacentHTML('beforeend', `<div class="triangle triangle-${i}" style="position: absolute; top: ${numGenerator(90)}%; left: ${numGenerator(90)}%; transform: rotate(${numGenerator(361)}deg)"></div>`);
     }
 }
@@ -44,10 +41,7 @@ function changeTriangleColor() {
     let i;
     let triangles = document.getElementsByClassName("triangle").length;
     for (i = 0; i < triangles; i++) {
-        /*
-        document.getElementsByClassName("triangle")[i].style.fill = randomColorGenerator();
-        document.getElementsByClassName("triangle")[i].style.transform = `rotate(${numGenerator(361)}deg)`;
-        */
+        
         document.getElementsByClassName("triangle")[i].style.left = `${numGenerator(95)}%`
         document.getElementsByClassName("triangle")[i].style.top = `${numGenerator(95)}%`
     }

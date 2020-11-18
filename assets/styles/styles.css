@@ -109,6 +109,7 @@ body::-webkit-scrollbar-thumb {
 #welcome-section {
     background-color: rgb(8, 8, 8);
     color: #fff;
+    display: flex;
     position: relative;
     height: 100vh;
     width: 100%;
@@ -118,15 +119,15 @@ body::-webkit-scrollbar-thumb {
     z-index: 1;
 }
 #earth {
-    height: 300px;
-    width: 300px;
+    height: 1000px;
+    width: 1000px;
     background-color: #001740;
     border-radius: 50%;
     overflow: hidden;
     position: absolute;
     top: 54%;
     transform: translateY(-50%);
-    left: 5%;
+    left: -25%;
     box-shadow: 0 0 30px #b8d2ff;
     z-index: 3;
 }
@@ -138,9 +139,9 @@ body::-webkit-scrollbar-thumb {
 #astronaut {
     position: absolute;
     z-index: 4;
-    height: 120px;
+    height: 314px;
     top: 42%;
-    left: 23%;
+    left: 3%;
     transform-origin: 50% 50%;
     animation: float-in-space 10s linear infinite;
 }
@@ -152,19 +153,23 @@ body::-webkit-scrollbar-thumb {
     100% {transform: translateX(0x) translateY(0px) rotate(0deg);}
 }
 .welcome-section_text {
-    font-family: 'Amatic SC','roboto', sans-serif;
-    position: absolute;
+    font-family: 'roboto', sans-serif;
+    /* position: absolute; */
+    position: static;
     text-align: center;
-    left: 59%;
-    top: 45%;
-    transform: translateX(-50%) translateY(-50%);
+    margin: auto;
+    /* left: 59%; */
+    /* top: 45%; */
+    /* transform: translateX(-50%) translateY(-50%); */
     border-radius: 5px;
     padding: 30px;
     box-sizing: border-box;
-    width: auto;
+    width: 53%;
+    /* height: 69%; */
     z-index: 5;
     font-weight: 200;
     overflow: hidden;
+    text-shadow: 0 0 6px #fff;
 }
 #about-me {
     display: flex;
@@ -282,29 +287,33 @@ body::-webkit-scrollbar-thumb {
 
 @media (max-width: 1440px) {
     #earth {
-        height: 400px;
-        width: 400px;
+        height: 900px;
+        width: 900px;
+    }
+    #astronaut {
+        height: 250px;
     }
     .welcome-section_text {
         left: 67%;
         top: 45%;
     }
     #welcome-section_heading {
-        font-size: 2.7rem;
+        font-size: 2rem;
     }
     #welcome-section_sub-heading {
-        font-size: 2.1rem;
+        font-size: 1.7rem;
+    }
+    #welcome-section_bio {
+        font-size: 1.4rem;
     }
 }
 @media (max-width: 1024px) {
     #earth {
-        height: 250px;
-        width: 250px;
-        left: 5%;
+        left: -58%;
     }
     #astronaut {
-        height: 100px;
         top: 43%;
+        height: 210px;
     }
     .welcome-section_text {
         padding: 30px 10px;
@@ -323,7 +332,7 @@ body::-webkit-scrollbar-thumb {
         font-size: 1.1rem;
     }
     #welcome-section__bio {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
     .arrow-double-link {
         height: 30px;
@@ -349,7 +358,7 @@ body::-webkit-scrollbar-thumb {
         width: 75px;
     }
     #welcome-section_heading {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         margin: 15px auto 20px auto;
     }
     #welcome-section_sub-heading {
@@ -362,7 +371,7 @@ body::-webkit-scrollbar-thumb {
         margin: 10px auto;
     }
     #welcome-section__bio {
-        font-size: 0.9rem;
+        font-size: 1.1rem;
     }
     .arrow-double-link {
         width: 100px;
@@ -391,7 +400,7 @@ body::-webkit-scrollbar-thumb {
         height: 60px;
     }
     #welcome-section__bio {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 }
 @media (max-width: 425px) {
@@ -505,10 +514,16 @@ body::-webkit-scrollbar-thumb {
     border-radius: 25%;
     margin: 0 5px;
 }
+.project__thumbs {
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+}
 .project__thumb {
-    width: 50%;
-    margin: 10px auto;
-    box-shadow: 0 0 2px #fff;
+    margin: 5px 20px;
+    height: 130px;
+    border-radius: 11px;
+    box-shadow: 0 0 5px black;
 }
 .project__description {
     font-size: 1rem;
@@ -593,6 +608,20 @@ body::-webkit-scrollbar-thumb {
     .project {
         width: 85vw;
         padding: 10px;
+    }
+    .project__thumbs {
+        margin: 10px;
+    }
+    .project__thumb {
+        margin: 5px;
+        border-radius: 11px;
+        height: auto;
+    }
+    .project__thumb__mobile {
+        width: 20%;
+    }
+    .project__thumb__laptop {
+        width: 60%;
     }
     .project__description {
         font-size: .9rem;
