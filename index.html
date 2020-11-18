@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" lang="en">
     <meta name="author" content="Jagadeesh Kumar">
-    <meta name="description" content="My name is Jagadeesh Kumar, web-developer and artist. I design and create user interfaces, also like to experiment with programming in general through creating applications. My other hobbies are science, art, cycling, running etc.">
+    <meta name="description" content="My name is Jagadeesh Kumar, Front-end developer and artist. I design and create user interfaces, also like to experiment with programming in general through creating applications. My other hobbies are science, art, cycling, running etc.">
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles/styles.css">
 	<meta name="google-site-verification" content="hHcgob94hTfKzDqe_BTHVgxOSfAOJ9TVq0DSFCgbygQ" />
@@ -27,9 +27,8 @@
                 <div id="about-me_text">
                     <p id="welcome-section_heading">My name is <span id="name">Jagadeesh Kumar</span></p>
                     <p id="welcome-section_sub-heading">Front-end developer and artist</p>
-                    <p id="welcome-section__bio">I design and build user interfaces, and experiment with programming through javascript. I am also a artist who create raster and vector images, and CSS animations.</p> 
-                </div>            
-                <img src="assets/images/profile-picture.jpg" draggable="false" id="profile-picture" alt="profile picture">
+                    <p id="welcome-section__bio">I design and build user interfaces, and experiment with programming through javascript. I am also a artist who create raster, 3D and vector images.</p> 
+                </div>
             </div>
 
             <div id="welcome-section_description">
@@ -69,13 +68,14 @@
                     <div class="project__title">GPX Chemin</div>
                     <a href="https://gpx-chemin.herokuapp.com/" target="_blank" class="project_link"><img src="assets/images/trip-visualizer.svg" class="project__icon" alt="project icon"></a>
                 </div>
+
+                <img class="project__thumb" src="assets/images/gpx-chemin_thumb.jpg" alt="">
+
                 <p class="project__element project__description">GPX Chemin is a simple web-app to visualize GPX files of sport activities. Leaflet library is used to render the map and Canvas for graph visualization. The files can be loaded from the local drive.</p>
     
                 <p class="project__element project__description">It renders the gpx track, graphs and tables for speed, elevation, heart rate etc. My plan for the future is to make the app pull activities through 3rd party APIs such as Strava and Decathlon.</p>
-    
-                <p class="project__element project__description">This project hopefully showcase my ability to work with JavaScript, XML, Canvas, SVG and basic Express.js (backend).</p>
 
-                <p class="project__element project__description project__technologies"><span class="project__technologies__span">Technologies:</span> HTML, CSS, JavaScript, Node.js, Express.js, Webpack, and PostCSS</p>
+                <p class="project__element project__description project__technologies"><span class="project__technologies__span">Technologies:</span> HTML, CSS, JavaScript, Leaflet.js, XML, Node.js, Express.js, Webpack, PostCSS, and Canvas</p>
                 
                 <div class="project__element project__links">
                     <div class="project__external">
@@ -102,7 +102,7 @@
                 <p class="project__element project__description">I have designed and created this site to showcase my ability to make a create a responsive website, vector images (SVG), animations (CSS) sprinkled with JavaScript. All the images, logos and animations are created by me.
                 </p>
 
-                <p class="project__element project__description project__technologies"><span class="project__technologies__span">Technologies:</span> HTML, CSS, JavaScript.</p>
+                <p class="project__element project__description project__technologies"><span class="project__technologies__span">Technologies:</span> HTML, CSS, JavaScript, and SVG.</p>
                 
                 <div class="project__element project__links">
                     <div class="project__external">
@@ -124,6 +124,7 @@
                     <div class="project__title">Marie Curie</div>
                     <a href="https://thinkingape46.github.io/marie-curie/" target="_blank" class="project_link"><img src="assets/images/marie-curie.svg" class="project__icon" alt="project icon"></a>
                 </div>
+
                 <p class="project__element project__description">This is my simple static website I have made as a tribute for two time nobel prize winner Marie Curie.</p>
     
                 <p class="project__element project__description">This project showcases my very basic skill of creating a meaningful site with html and css.</p>
@@ -141,18 +142,14 @@
                             <p class="text project__links__text">Live Site</p>
                         </a>
                     </div>
-                </div>    
-
+                </div>
             </section>
-
         </div>
-        
-
     </section>
 
     <footer id="footer">
         <div class="footer_sub-heading">
-            <p class="text text--narrow text--large text--center">Contact Me</p>
+            <p class="footer__text text text--narrow text--large text--center">Contact Me:</p>
         </div>
         <div class="footer-social">
             <a target="_blank" href="https://github.com/thinkingape46" id="profile-link" class="profile-link"><img src="assets/images/github.svg" alt="github icon" class="github social-icon social-icon--footer"></a>
