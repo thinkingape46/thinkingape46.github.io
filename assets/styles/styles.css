@@ -90,18 +90,23 @@ body::-webkit-scrollbar-thumb {
         padding: 15px;
     }
 }
-@media (max-width: 400px) {
+@media (max-width: 425px) {
     #navbar {
         height: 50px;
     }
     .nav-list_item {
         padding: 0 10px;
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 }
-@media (max-width: 300px) {
+@media (max-width: 375px) {
     .nav-list_item {
-        font-size: 1rem;
+        font-size: 0.8rem;
+    }
+}
+@media (max-width: 320px) {
+    .nav-list_item {
+        font-size: 0.6rem;
     }
 }
 /***************** Navigation Bar End ************/
@@ -434,6 +439,12 @@ body::-webkit-scrollbar-thumb {
         height: 100px;
     }
 }
+@media (max-width: 320px) {
+    .arrow-double-link {
+        width: 76px;
+        height: 25px;
+    }
+}
 @media (max-width: 300px) {
     #navbar {
         height: 30px;
@@ -670,13 +681,24 @@ body::-webkit-scrollbar-thumb {
     width: 50px;
 }
 
+.section_about-us {
+    padding: 10px 0;
+}
 @media (max-width: 650px) {
     .social-icon--footer {
         margin: 0 5px;
        }
 }
-.section_about-us {
-    padding: 10px 0;
+@media (max-width: 425px) {
+    .profile-link {
+        padding: 5px;
+    }
+    .social-icon {
+        width: 30px;
+    }
+    .footer__text {
+        font-size: 0.8rem;
+    }
 }
 
 /* Footer social end */
