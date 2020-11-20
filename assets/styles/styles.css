@@ -159,30 +159,22 @@ body::-webkit-scrollbar-thumb {
 }
 .welcome-section_text {
     font-family: 'roboto', sans-serif;
-    /* position: absolute; */
     position: static;
     text-align: center;
     margin: auto;
-    /* left: 59%; */
-    /* top: 45%; */
-    /* transform: translateX(-50%) translateY(-50%); */
     border-radius: 5px;
     padding: 30px;
     box-sizing: border-box;
     width: 53%;
-    /* height: 69%; */
     z-index: 5;
     font-weight: 200;
     overflow: hidden;
-    text-shadow: 0 0 6px #fff;
+    text-shadow: 0 0 3px #fff;
 }
 #about-me {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #fff;
-}
-#about-me_text {
-    margin-right: 50px;
 }
 #profile-picture {
     height: 125px;
@@ -216,13 +208,65 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     justify-content: center;
     z-index: 5;
+    position: relative;
+    height: 200px;
 }
 .language {
     display: flex;
-    flex-direction: column;
-    flex-basis: 50px;
-    margin: 0 10px;
+    justify-content: center;
+    z-index: 5;
+    height: 100%;
+    position: absolute;
+    transform-origin: center;
 }
+.html {
+    animation: revolve-html 10s linear infinite;
+}
+.html__orbit {
+    position: absolute;
+    border: 1px solid #fff;
+    height: 50px;
+    width: 50px;
+    top: 75px;
+    border-radius: 50%;
+}
+.css {
+    animation: revolve-css 15s linear infinite;
+    transform: rotate(120deg);
+}
+.css__orbit {
+    position: absolute;
+    border: 1px solid #fff;
+    height: 110px;
+    width: 110px;
+    top: 49px;
+    border-radius: 50%;
+}
+.javascript {
+    animation: revolve-js 20s linear infinite;
+    transform: rotate(240deg);
+}
+.js__orbit {
+    position: absolute;
+    border: 1px solid #fff;
+    height: 188px;
+    width: 188px;
+    top: 7px;
+    border-radius: 50%;
+}
+@keyframes revolve-html {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+@keyframes revolve-css {
+    0% {transform: rotate(120deg);}
+    100% {transform: rotate(480deg);}
+}
+@keyframes revolve-js {
+    0% {transform: rotate(240deg);}
+    100% {transform: rotate(600deg);}
+}
+
 .language_logo {
     height: 40px;
     width: 40px;
@@ -233,13 +277,37 @@ body::-webkit-scrollbar-thumb {
 }
 .skill__member {
     display: inline-block;
-    height: 40px;
-    width: 40px;
-    margin: auto;
+    height: 20px;
+    width: 20px;
+    margin: 0;
 }
 .skill__image {
     height: 100%;
     width: 100%;
+}
+.html__link {
+    margin: 71px 0 0 0;
+    animation: 10s anti-revolve-html infinite linear;
+}
+@keyframes anti-revolve-html {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(-360deg);}
+}
+.css__link {
+    margin: 36px 0 0 0;
+    animation: 15s anti-revolve-css infinite linear;
+}
+@keyframes anti-revolve-css {
+    0% {transform: rotate(-120deg);}
+    100% {transform: rotate(-480deg);}
+}
+.javascript__link {
+    margin: 0;
+    animation: 20s anti-revolve-js infinite linear;
+}
+@keyframes anti-revolve-js {
+    0% {transform: rotate(-240deg);}
+    100% {transform: rotate(-600deg);}
 }
 .text--bold {
     font-weight: 400;
@@ -271,6 +339,7 @@ body::-webkit-scrollbar-thumb {
     100% {box-shadow: 0 0 1px #fff;}
 }
 .arrow-double-link {
+    display: none;
     position: absolute;
     bottom: 20px;
     left: 50%;
@@ -409,12 +478,10 @@ body::-webkit-scrollbar-thumb {
     }
 }
 @media (max-width: 425px) {
-    #about-me_text {
-        margin-right: 13px;
-    }
+    
     .welcome-section_text {
         width: 85%;
-        margin-top: 133px;
+        margin-top: 105px;
     }
     #welcome-section_heading {
         font-size: 1.2rem;
@@ -431,6 +498,9 @@ body::-webkit-scrollbar-thumb {
     #welcome-section__bio {
         font-size: 1rem;
     }
+    #welcome-section__bio {
+        font-size: 1rem;
+    }
     .arrow-double-link {
         width: 100px;
         height: 100px;
@@ -440,10 +510,22 @@ body::-webkit-scrollbar-thumb {
     }
 }
 @media (max-width: 320px) {
+
+    #welcome-section_heading {
+        font-size: 1.1rem;
+        margin: 8px auto 5px auto;
+    }
+    #welcome-section_sub-heading {
+        font-size: 1rem;
+    }
+    #welcome-section__bio {
+        font-size: 0.9rem;
+    }
     .arrow-double-link {
         width: 76px;
         height: 25px;
     }
+
 }
 @media (max-width: 300px) {
     #navbar {
@@ -464,6 +546,10 @@ body::-webkit-scrollbar-thumb {
     #welcome-section_sub-heading {
         font-size: 0.8rem;
         margin: 4px auto 10px auto;
+    }
+    
+    #welcome-section__bio {
+        font-size: 0.7rem;
     }
     #welcome-section_description {
         font-size: 0.7rem;
