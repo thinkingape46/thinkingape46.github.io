@@ -38,9 +38,6 @@ body {
   /* meant for sub-heading */
   font-size: 1.2rem;
 }
-.text--full-width {
-  width: 100%;
-}
 
 /* Text styling start */
 
@@ -198,11 +195,9 @@ body::-webkit-scrollbar-thumb {
   font-size: 2.1rem;
   font-weight: 400;
   margin: 20px auto;
-  width: max-content;
 }
 #welcome-section_sub-heading {
   font-size: 1.5rem;
-  width: max-content;
   font-weight: 300;
   margin: 20px auto 30px auto;
 }
