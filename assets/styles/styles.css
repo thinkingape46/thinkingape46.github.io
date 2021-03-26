@@ -1,6 +1,6 @@
 :root {
   --darkBlueOpaque: rgb(0, 23, 66);
-  --darkBlueTransparent: rgba(0, 23, 66, 0.6);
+  --darkBlueTransparent: rgba(0, 23, 66, 0.8);
   --lightBlueTransparent: rgba(0, 43, 120, 0.8);
   --lightBlueVeryTransparent: rgba(0, 43, 120, 0.5);
   --mainBlueOpaque: rgba(0, 43, 120, 1);
