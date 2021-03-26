@@ -1,6 +1,6 @@
 :root {
   --darkBlueOpaque: rgb(0, 23, 66);
-  --darkBlueTransparent: rgba(0, 23, 6, 0.8);
+  --darkBlueTransparent: rgba(0, 23, 66, 0.6);
   --lightBlueTransparent: rgba(0, 43, 120, 0.8);
   --lightBlueVeryTransparent: rgba(0, 43, 120, 0.5);
   --mainBlueOpaque: rgba(0, 43, 120, 1);
@@ -60,7 +60,9 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   z-index: 11;
   height: max-content;
-  background-color: var(--mainBlueOpaque);
+  background-color: var(--darkBlueTransparent);
+  backdrop-filter: blur(5px);
+  height: 80px;
 }
 .nav-list {
   display: flex;
