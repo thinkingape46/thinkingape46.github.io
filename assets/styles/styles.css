@@ -262,6 +262,7 @@ body::-webkit-scrollbar-thumb {
   top: 7px;
   border-radius: 50%;
 }
+
 @keyframes revolve-html {
   0% {
     transform: rotate(0deg);
@@ -339,6 +340,43 @@ body::-webkit-scrollbar-thumb {
   }
   100% {
     transform: rotate(-600deg);
+  }
+}
+@media (min-width: 768px) {
+  .languages {
+    height: 300px;
+    width: 300px;
+    margin: 10px auto 0 auto;
+  }
+  .skill__member {
+    height: 2rem;
+    width: 2rem;
+  }
+  .javascript {
+    height: 100%;
+    width: 100%;
+  }
+  .js__orbit {
+    height: 95%;
+    width: 95%;
+  }
+  .css__link {
+    margin: 3rem 0 0 0;
+  }
+  .css__orbit {
+    height: 55%;
+    width: 55%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .html__link {
+    margin: 6rem 0 0 0;
+  }
+  .html__orbit {
+    height: 25%;
+    width: 25%;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
 .text--bold {
@@ -668,6 +706,7 @@ body::-webkit-scrollbar-thumb {
 }
 .project__description {
   font-size: 1rem;
+  text-align: center;
   margin: 5px;
   font-weight: 100;
 }
@@ -738,6 +777,9 @@ body::-webkit-scrollbar-thumb {
 }
 .trip-visualizer {
   background: linear-gradient(45deg, rgba(0, 56, 71, 1), rgba(112, 84, 62, 1));
+}
+.how-far {
+  background: linear-gradient(45deg, rgb(130, 63, 30), rgb(43, 33, 26));
 }
 .marie-curie {
   background: linear-gradient(45deg, rgba(25, 51, 35, 1), rgba(79, 97, 86, 1));
