@@ -680,6 +680,7 @@ body::-webkit-scrollbar-thumb {
 }
 .project__head {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin: 5px;
 }
@@ -772,7 +773,7 @@ body::-webkit-scrollbar-thumb {
   width: 30px;
   margin: auto;
 }
-.gotreks {
+.krebs {
   background: linear-gradient(45deg, rgba(0, 148, 67, 1), rgba(0, 96, 148, 1));
 }
 .trip-visualizer {
@@ -783,6 +784,9 @@ body::-webkit-scrollbar-thumb {
 }
 .marie-curie {
   background: linear-gradient(45deg, rgba(25, 51, 35, 1), rgba(79, 97, 86, 1));
+}
+.static-site {
+  background: linear-gradient(45deg, rgba(0, 148, 67, 1), rgba(0, 96, 148, 1));
 }
 
 /************ Project section media queries *********/
